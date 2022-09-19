@@ -31,13 +31,15 @@
             <div class="sidebar-brand d-flex align-items-center ">
                 <!-- Sidebar Toggle (Topbar) -->
                 <button class="sm-none-b" id="sidebarToggleTop">
-                    <i class="fa fa-bars"></i>
-                </button>
+                <i class="fa fa-bars"></i>
+            </button>
                 <!-- Sidebar - Brand -->
                 <a href="index.html">
+
                     <div class="sidebar-brand-icon rotate-n-15">
                         <img src="assets/img/logo-top.png" alt="" class="logo">
                     </div>
+                    <!-- <div class="sidebar-brand-text mx-3"> Marketing</div> -->
                 </a>
             </div>
 
@@ -48,6 +50,7 @@
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
+
                 </a>
             </li>
             <!-- Divider -->
@@ -59,7 +62,7 @@
                 </a>
                 <div id="Campaign" class="collapse show">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="campaign1.html">Email Campaign</a>
+                        <a class="collapse-item" href="campaign2.html">Email Campaign</a>
                         <a class="collapse-item active" href="smscampaign.html">Sms Campaign</a>
                     </div>
                 </div>
@@ -68,8 +71,10 @@
             <hr class="sidebar-divider">
             <li class="nav-item">
                 <a class="nav-link" href="anlytic.html">
+
                     <i class="fa-solid fa-chart-line"></i>
                     <span>Analytics</span>
+
                 </a>
             </li>
             <!-- Divider -->
@@ -86,13 +91,13 @@
                 <a class="nav-link" href="product.html">
                     <i class="fab fa-product-hunt"></i>
                     <span>Product</span>
+
                 </a>
             </li>
-            <!-- Divider -->
             <hr class="sidebar-divider">
             <li class="nav-item">
-                <a class="nav-link" href="Contact.html">
-                    <i class="fa-solid fa-address-book"></i>
+                <a class="nav-link" href="contact.html">
+                    <i class="fab fa-product-hunt"></i>
                     <span>Contact</span>
                 </a>
             </li>
@@ -121,6 +126,7 @@
 
                         </li>
                         <!-- Nav Item - Notification -->
+
 
                         <li class="nav-item dropdown no-arrow mx-1 ">
                             <a class="nav-link dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -258,170 +264,158 @@
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb content_shadow">
                                         <li class="breadcrumb-item"><a href="#">Campaign</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">SMS Campaign </li>
+                                        <li class="breadcrumb-item"><a href="smscampaign.html">SMS Campaign</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page"> Configure </li>
                                     </ol>
                                 </nav>
                             </div>
                         </div>
                         <div class="content-body  mb-4">
-                            <div class="all-campaigns">
-                                <div class="all-cam-top">
-                                    <div class="dropdown">
-                                        <button class="btn-transparent f-18 p1-color dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            All Campaign
-                                        </button>
-                                        <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item active" href="#">All Campaign</a></li>
-                                            <li><a class="dropdown-item" href="#">Sent Campaign</a></li>
-                                            <li><a class="dropdown-item" href="#">Delete Campaign</a></li>
+                            <div class="marketing-wrapper ">
+                                <div class="campaign-details sms-configure">
+                                    <div class="campaign-d">
+
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link  active" id="details-tab" data-bs-toggle="tab" data-bs-target="#details" type="button" role="tab" aria-controls="details" aria-selected="true">
+                                                Detail view
+                                            </button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="comment-tab" data-bs-toggle="tab" data-bs-target="#comment" type="button" role="tab" aria-controls="comment" aria-selected="false">
+                                                Comment
+                                            </button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link task" id="task-tab" data-bs-toggle="tab" data-bs-target="#task" type="button" role="tab" aria-controls="task" aria-selected="false">Task</button>
+                                            </li>
+
                                         </ul>
-                                    </div>
-                                    <div class="create-campaign">
-                                        <a href="createsmscampaign.html" class="create-c-btn">Create Campaign</a>
-                                    </div>
-                                </div>
-                                <div class="all-campaigns-body shadow">
-                                    <div class="filter-campaign">
-                                        <p class="filter-h f-18 mb-3">Filter</p>
 
-                                        <div class="campaign-owner mb-4">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                                <label class="form-check-label mb-2" for="flexCheckChecked">
-                                                    Campaign Owner
-                                                </label>
-                                            </div>
-                                            <div class="campaign-owner-box">
-                                                <p>Me</p>
-                                            </div>
-                                        </div>
-                                        <div class="campaign-owner mb-2">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    SMS Gateway
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="campaign-owner mb-2">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                                                <label class="form-check-label" for="flexCheckDefault2">
-                                                    SMS Status
-                                                </label>
-                                            </div>
-                                        </div>
                                     </div>
-                                    <div class="select-campaign ">
-                                        <div class="select-campaign-t">
-                                            <div class="select-all">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                                                    <label class="form-check-label f-15" for="flexCheckDefault3">
-                                                        Select All
-                                                    </label>
+
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane  pt-5 fade position-relative  show active" id="details" role="tabpanel" aria-labelledby="details-tab">
+                                            <div class="verify-wrapper border-r  ">
+                                                <form action="#">
+                                                    <div class="p-3">
+                                                        <div class="row">
+                                                            <div class="col-lg-4 col-xl-3">
+                                                                <label class="form-label f-17 mt-2">PROJECT DETAILS</label>
+                                                            </div>
+                                                            <div class="col-lg-8 col-xl-9">
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <div>
+                                                                        <div>
+                                                                            <p><span class="w-200"> Marketing Project Name : </span> Global</p>
+                                                                        </div>
+                                                                        <div>
+                                                                            <p><span class="w-200"> Launch Date : </span> Sep 24, 2022</p>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="edit-t">
+                                                                        <button type="button" class="create-c-btn btn-cancel d-inline-block">Edit Topic</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="sidebar-divider-b"></div>
+
+                                                    <div class="p-3">
+                                                        <div class="row">
+                                                            <div class="col-lg-4 col-xl-3">
+                                                                <label class="form-label f-17 mt-2">SMS GATEWAY
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-lg-8 col-xl-9">
+                                                                <div>
+                                                                    <p>
+                                                                        Enable SMS sending with SMS gateways
+
+                                                                    </p>
+                                                                    <div class="pt-2">
+                                                                        <button type="button" class="btn g-btn-2 text-white"> Select an SMS gateway</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="sidebar-divider-b"></div>
+                                                    <div class="p-3">
+                                                        <div class="row">
+                                                            <div class="col-lg-4 col-xl-3">
+                                                                <label class="form-label f-17 mt-2">RECIPIENT
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-lg-8 col-xl-9">
+                                                                <div>
+                                                                    <p>
+
+                                                                        Select the contacts to whom you are sending this SMS
+
+                                                                    </p>
+                                                                    <div class="pt-2">
+                                                                        <button type="button" class="btn g-btn-2 text-white"> Add Recipient</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="sidebar-divider-b"></div>
+                                                    <div class="p-3">
+                                                        <div class="row">
+                                                            <div class="col-lg-4 col-xl-3">
+                                                                <label class="form-label f-17 mt-2">SMS CONTENT
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-lg-8 col-xl-9">
+                                                                <div>
+                                                                    <p>
+                                                                        Provide content for your SMS campaign and proceed Configure Content
+                                                                    </p>
+                                                                    <div class="pt-2">
+                                                                        <button type="button" class="btn g-btn-2 text-white">Configure Content</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="sidebar-divider-b"></div>
+
+
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade " id="comment" role="tabpanel" aria-labelledby="profile-tab">
+                                            <div class="comment-wrapper pt-5 text-center">
+                                                <img src="assets/img/No_Data.svg" width="100" alt="">
+                                                <div class="pt-3">
+                                                    <h6>Start Your Discussion</h6>
+                                                    <p class="py-2">Make decisions faster and save time by collaborating with your team.</p>
+                                                    <button class="add-comment mt-2">Add Comment</button>
                                                 </div>
+
                                             </div>
-                                            <div class="sorted-by d-flex align-items-center gap-3">
-                                                <button class="search-icon">
-                                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                                </button>
-                                                <div class="dropdown">
-                                                    <button class="btn-transparent f-15 dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        Sort by : Recently Created 
-                                                        <i class="fas fa-chevron-down me-1"></i>
-                                                    </button>
-                                                    <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton2">
-                                                        <li><a class="dropdown-item active" href="#">Recently Created</a></li>
-                                                        <li><a class="dropdown-item" href="#">Creation Date</a></li>
-                                                        <li><a class="dropdown-item" href="#"> Last Modified</a></li>
-                                                        <li><a class="dropdown-item" href="#">  Ascending Order</a></li>
-                                                        <li><a class="dropdown-item" href="#">  Descending Order</a></li>
-                                                    </ul>
+                                        </div>
+                                        <div class="tab-pane fade " id="task" role="tabpanel" aria-labelledby="task-tab">
+                                            <div class="task-wrapper pt-5 text-center">
+                                                <img src="assets/img/No_Data.svg" width="100" alt="">
+                                                <div class="pt-3">
+                                                    <h6>Capture And Organize Tasks</h6>
+                                                    <p class="py-2">Keep a list of tasks to complete, prioritize them, and stay on track to complete your <br> marketing activities on time.</p>
+                                                    <button class="add-comment mt-2">New Task</button>
                                                 </div>
 
                                             </div>
                                         </div>
-                                        <div class="select-campaign-b">
-                                            <div class="card">
-                                                <ul class="list-group">
-                                                    <li class="list-group-item">
-                                                        <div class="list-group-item-wrapper d-flex gap-3">
-                                                            <div class="select-campaign-reviewed">
-                                                                <h4 class="cam-title-name">Timerni</h4>
-                                                                <p><b class="sts"></b> To Be Reviewed | Created on Jul 25, 2022 04:32 PM
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="dropdown">
-                                                            <a href="#" class="btn-transparent f-16 dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <button type="button" class="bg-transparent" data-bs-toggle="tooltip" data-bs-placement="top" title="More">
-                                                                    <i class="fa-solid fa-ellipsis"></i>
-                                                                </button>
-                                                            </a>
 
-                                                            <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton3">
-                                                                <li><a class="dropdown-item " href="#">Edit subject and sender details</a></li>
-                                                                <li><a class="dropdown-item" href="#">Add Content</a></li>
-                                                                <li><a class="dropdown-item" href="#"> Delete campaign</a></li>
-
-                                                            </ul>
-                                                        </div>
-
-
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <div class="list-group-item-wrapper d-flex gap-3">
-                                                            <div class="select-campaign-reviewed">
-                                                                <h4 class="cam-title-name">Timerni</h4>
-                                                                <p><b class="sts"></b> To Be Reviewed | Created on Jul 25, 2022 04:32 PM
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="dropdown">
-                                                            <a href="#" class="btn-transparent f-16 dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <button type="button" class="bg-transparent show" data-bs-toggle="tooltip" data-bs-placement="top" title="More">
-                                                                    <i class="fa-solid fa-ellipsis"></i>
-                                                                </button>
-                                                            </a>
-
-                                                            <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton4">
-                                                                <li><a class="dropdown-item " href="#">Edit subject and sender details</a></li>
-                                                                <li><a class="dropdown-item" href="#">Add Content</a></li>
-                                                                <li><a class="dropdown-item" href="#"> Delete campaign</a></li>
-
-                                                            </ul>
-                                                        </div>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <div class="list-group-item-wrapper d-flex gap-3">
-                                                            <div class="select-campaign-reviewed">
-                                                                <h4 class="cam-title-name">Timerni</h4>
-                                                                <p><b class="sts"></b> To Be Reviewed | Created on Jul 25, 2022 04:32 PM
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="dropdown">
-                                                            <a href="#" class="btn-transparent f-16 dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <button type="button" class="bg-transparent" data-bs-toggle="tooltip" data-bs-placement="top" title="More">
-                                                                    <i class="fa-solid fa-ellipsis"></i>
-                                                                </button>
-                                                            </a>
-
-                                                            <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton5">
-                                                                <li><a class="dropdown-item " href="#">Edit subject and sender details</a></li>
-                                                                <li><a class="dropdown-item" href="#">Add Content</a></li>
-                                                                <li><a class="dropdown-item" href="#"> Delete campaign</a></li>
-
-                                                            </ul>
-                                                        </div>
-
-
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -438,7 +432,7 @@
     <!--============= Jquery-3.6.0 =============-->
     <script src="assets/js/jquery-3.6.0.min.js "></script>
     <!--=== Popper  v2.9.2 js ===-->
-    <script src="assets/js/popper.min.js "></script>
+    <script src="assets/js/popper.min.js"></script>
     <!--=== Bootstrap4 js ===-->
     <script src="assets/js/bootstrap.min.js "></script>
     <!--=== Main js ===-->

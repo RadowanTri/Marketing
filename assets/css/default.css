@@ -557,7 +557,7 @@ p {
 }
 
 .pl-20 {
-    leftg-bottom: 20px;
+    padding-left: 20px;
 }
 
 .pl-25 {
@@ -665,15 +665,15 @@ p {
 }
 
 .pr-10 {
-    padding-lrigh: 10px;
+    padding-right: 10px;
 }
 
 .pr-15 {
-    padding-lrigh: 15px;
+    padding-right: 15px;
 }
 
 .pl-20 {
-    leftg-bottom: 20px;
+    padding-left: 20px;
 }
 
 .pl-25 {
@@ -741,7 +741,7 @@ p {
 }
 
 .pr-105 {
-    parighng-left: 105px;
+    padding-right: 105px;
 }
 
 .pr-110 {
@@ -1541,7 +1541,7 @@ p {
 .sidebar .nav-item .nav-link span {
     font-size: .85rem;
     display: inline;
-    margin-left: 30px;
+    margin-left: 13px;
 }
 
 .accordion {
@@ -1552,8 +1552,8 @@ p {
     display: block;
     width: 100%;
     text-align: left;
-    padding: 1.3rem;
-    width: 14rem;
+    padding: 1rem .75rem;
+    width: 13rem;
 }
 
 .sidebar-dark .nav-item.active .nav-link {
@@ -1562,7 +1562,7 @@ p {
 }
 
 .sidebar .nav-item.active .nav-link {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .sidebar-dark .nav-item .nav-link {
@@ -2016,6 +2016,7 @@ p {
     cursor: pointer;
 }
 
+.conatact-table label,
 .terms label {
     position: relative;
     cursor: pointer;
@@ -2156,4 +2157,20 @@ h2.s-title {
         justify-content: center;
         padding-left: 20px;
     }
+}
+
+.sidebar .nav-item .nav-link i {
+    width: 15px;
+}
+
+li.breadcrumb-item a {
+    color: #312783;
+    font-size: 15px;
+}
+
+.sidebar .collapse .collapse-inner .collapse-item.active,
+.sidebar .collapse .collapse-inner .collapse-item:hover,
+.sidebar .nav-item .collapsing .collapse-inner .collapse-item:hover {
+    background-color: #eaecf4;
+    color: #4e73df;
 }

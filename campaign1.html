@@ -35,11 +35,9 @@
                 </button>
                 <!-- Sidebar - Brand -->
                 <a href="index.html">
-
                     <div class="sidebar-brand-icon rotate-n-15">
                         <img src="assets/img/logo-top.png" alt="" class="logo">
                     </div>
-                    <!-- <div class="sidebar-brand-text mx-3"> Marketing</div> -->
                 </a>
             </div>
 
@@ -50,52 +48,52 @@
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
-
                 </a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#User" role="button" aria-expanded="false" aria-controls="User">
-                    <i class="fas fa-university"></i>
-                    <span>User</span>
+            <li class="nav-item active">
+                <a class="nav-link collapsed" data-bs-toggle="collapse" href="#Campaign" role="button" aria-expanded="false" aria-controls="Campaign">
+                    <i class="fa-solid fa-microphone"></i>
+                    <span>Campaign</span>
                 </a>
-                <div id="User" class="collapse">
+                <div id="Campaign" class="collapse show">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="manageuser.html">Manage User</a>
-                        <a class="collapse-item" href="rolepermission.html">Role Permission</a>
+                        <a class="collapse-item active" href="campaign1.html">Email Campaign</a>
+                        <a class="collapse-item" href="smscampaign.html">Sms Campaign</a>
                     </div>
                 </div>
-
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
             <li class="nav-item">
                 <a class="nav-link" href="anlytic.html">
-
                     <i class="fa-solid fa-chart-line"></i>
                     <span>Analytics</span>
-
                 </a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
             <li class="nav-item">
                 <a class="nav-link" href="customer.html">
-
                     <i class="fa-solid fa-person"></i>
                     <span>Customer</span>
-
                 </a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
             <li class="nav-item">
                 <a class="nav-link" href="product.html">
-
                     <i class="fab fa-product-hunt"></i>
                     <span>Product</span>
-
+                </a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            <li class="nav-item">
+                <a class="nav-link" href="Contact.html">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span>Contact</span>
                 </a>
             </li>
             <!-- Divider -->
@@ -256,20 +254,13 @@
                 <div class="container-fluid">
                     <div class="container-wrappero">
                         <div class="content-page-header mb-4">
-                            <div class="card">
-                                <div class="card-body">
-
-                                    <h4 class="page-title">
-                                        <a href="#">
-                                            <i class="fas fa-th-large"></i>
-                                            <span> Campaigns </span>
-                                        </a>
-                                    </h4>
-
-
-
-                                </div>
-                                <!-- end card body-->
+                            <div class="breadcrumb-header mb-4">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb content_shadow">
+                                        <li class="breadcrumb-item"><a href="#">Campaign</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Email Campaign </li>
+                                    </ol>
+                                </nav>
                             </div>
                         </div>
                         <div class="content-body  mb-4">
@@ -456,13 +447,13 @@
 
     <!--=== All Plugin ===-->
     <!--============= Jquery-3.6.0 =============-->
-    <script type="text/javascript " src="assets/js/jquery-3.6.0.min.js "></script>
+    <script src="assets/js/jquery-3.6.0.min.js "></script>
     <!--=== Popper  v2.9.2 js ===-->
     <script src="assets/js/popper.min.js "></script>
     <!--=== Bootstrap4 js ===-->
-    <script type="text/javascript " src="assets/js/bootstrap.min.js "></script>
+    <script src="assets/js/bootstrap.min.js "></script>
     <!--=== Main js ===-->
-    <script type="text/javascript " src="assets/js/main.js "></script>
+    <script src="assets/js/main.js "></script>
 </body>
 
 </html>

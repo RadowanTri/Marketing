@@ -35,62 +35,65 @@
                 </button>
                 <!-- Sidebar - Brand -->
                 <a href="index.html">
-
                     <div class="sidebar-brand-icon rotate-n-15">
                         <img src="assets/img/logo-top.png" alt="" class="logo">
                     </div>
-                    <!-- <div class="sidebar-brand-text mx-3"> Marketing</div> -->
                 </a>
             </div>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item ">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
-
                 </a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
-            <li class="nav-item  active">
-                <a class="nav-link" href="campaign.html">
-
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-toggle="collapse" href="#Campaign" role="button" aria-expanded="false" aria-controls="Campaign">
                     <i class="fa-solid fa-microphone"></i>
                     <span>Campaign</span>
-
                 </a>
+                <div id="Campaign" class="collapse show">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item active" href="campaign1.html">Email Campaign</a>
+                        <a class="collapse-item" href="smscampaign.html">Sms Campaign</a>
+                    </div>
+                </div>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
-            <li class="nav-item">
+            <li class="nav-item ">
                 <a class="nav-link" href="anlytic.html">
-
                     <i class="fa-solid fa-chart-line"></i>
                     <span>Analytics</span>
-
                 </a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
-            <li class="nav-item">
+            <li class="nav-item ">
                 <a class="nav-link" href="customer.html">
-
                     <i class="fa-solid fa-person"></i>
                     <span>Customer</span>
-
                 </a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
             <li class="nav-item">
-                <a class="nav-link" href="product.html">
-
+                <a class="nav-link " href="product.html">
                     <i class="fab fa-product-hunt"></i>
                     <span>Product</span>
-
+                </a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            <li class="nav-item ">
+                <a class="nav-link" href="Contact.html">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span>Contact</span>
                 </a>
             </li>
             <!-- Divider -->
@@ -102,7 +105,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <nav class="navbar navbar-expand navbar-light bg-white topbar static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <button class="sm-block-b" id="sidebarToggleTop">
@@ -252,36 +255,34 @@
                 <div class="container-fluid">
                     <div class="container-wrappero">
                         <div class="content-page-header mb-4">
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center  justify-content-between ">
-                                    <h4 class="page-title">
-                                        <a href="campaign1.html" class="icon-hover">
-                                            <i class="fa-solid fa-arrow-left-long"></i>
-                                        </a>
-                                        <span class="ms-2">Radowan </span>
-                                    </h4>
-                                    <div class="pre-design-cat d-flex align-items-center gap-4">
-                                        <p class="f-14">Pre-designed Templates</p>
-                                        <div class="dropdown">
-                                            <button class="btn-transparent  f-15 dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
-                                                
-                                                All Categories
-                                                <i class="fas fa-chevron-down ms-3"></i>
-                                            </button>
-                                            <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenu5">
-                                                <li><button class="dropdown-item" type="button"> 
-                                                    All Categories</button></li>
-                                                <li><button class="dropdown-item" type="button"> Holyday</button></li>
-                                                <li><button class="dropdown-item" type="button">Welcome</button></li>
-                                                <li><button class="dropdown-item" type="button">Deal & Offer</button></li>
+                            <div class="content_shadow d-md-block d-lg-flex align-items-center  justify-content-between ">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb mb-0">
+                                        <li class="breadcrumb-item"><a href="#">Campaign</a></li>
+                                        <li class="breadcrumb-item"><a href="campaign1.html">Email Campaign</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Save Template </li>
+                                    </ol>
+                                </nav>
+                                <div class="pre-design-cat d-flex align-items-center gap-4">
+                                    <p class="f-14">Pre-designed Templates</p>
+                                    <div class="dropdown">
+                                        <button class="btn-transparent  f-15 dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+                                            
+                                            All Categories
+                                            <i class="fas fa-chevron-down ms-3"></i>
+                                        </button>
+                                        <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenu5">
+                                            <li><button class="dropdown-item" type="button"> 
+                                                All Categories</button></li>
+                                            <li><button class="dropdown-item" type="button"> Holyday</button></li>
+                                            <li><button class="dropdown-item" type="button">Welcome</button></li>
+                                            <li><button class="dropdown-item" type="button">Deal & Offer</button></li>
 
-                                            </ul>
-                                        </div>
+                                        </ul>
                                     </div>
-
-
                                 </div>
-                                <!-- end card body-->
+
+
                             </div>
                         </div>
                         <div class="content-body  mb-4">
@@ -353,7 +354,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer justify-content-center">
-                                                            <a href="basic_template.html" class="create-c-btn">Use This Template</a>
+                                                            <a href="basictemplate.html" class="create-c-btn">Use This Template</a>
 
                                                         </div>
                                                     </div>
@@ -362,7 +363,7 @@
 
 
                                             <div class="use-template">
-                                                <a href="basic_template.html">
+                                                <a href="basictemplate.html">
                                                     <button class="g-btn"> Select Template</button>
                                                 </a>
 
@@ -449,7 +450,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer justify-content-center">
-                                                            <a href="basic_template.html" class="create-c-btn">Use This Template</a>
+                                                            <a href="basictemplate.html" class="create-c-btn">Use This Template</a>
 
                                                         </div>
                                                     </div>
@@ -458,7 +459,7 @@
 
 
                                             <div class="use-template">
-                                                <a href="basic_template.html">
+                                                <a href="basictemplate.html">
                                                     <button class="g-btn"> Select Template</button>
                                                 </a>
 
@@ -524,7 +525,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer justify-content-center">
-                                                            <a href="basic_template.html" class="create-c-btn">Use This Template</a>
+                                                            <a href="basictemplate.html" class="create-c-btn">Use This Template</a>
 
                                                         </div>
                                                     </div>
@@ -533,7 +534,7 @@
 
 
                                             <div class="use-template">
-                                                <a href="basic_template.html">
+                                                <a href="basictemplate.html">
                                                     <button class="g-btn"> Select Template</button>
                                                 </a>
 
@@ -605,7 +606,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer justify-content-center">
-                                                            <a href="basic_template.html" class="create-c-btn">Use This Template</a>
+                                                            <a href="basictemplate.html" class="create-c-btn">Use This Template</a>
 
                                                         </div>
                                                     </div>
@@ -614,7 +615,7 @@
 
 
                                             <div class="use-template">
-                                                <a href="basic_template.html">
+                                                <a href="basictemplate.html">
                                                     <button class="g-btn"> Select Template</button>
                                                 </a>
 
@@ -700,7 +701,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer justify-content-center">
-                                                            <a href="basic_template.html" class="create-c-btn">Use This Template</a>
+                                                            <a href="basictemplate.html" class="create-c-btn">Use This Template</a>
 
                                                         </div>
                                                     </div>
@@ -709,7 +710,7 @@
 
 
                                             <div class="use-template">
-                                                <a href="basic_template.html">
+                                                <a href="basictemplate.html">
                                                     <button class="g-btn"> Select Template</button>
                                                 </a>
 
@@ -796,7 +797,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer justify-content-center">
-                                                            <a href="basic_template.html" class="create-c-btn">Use This Template</a>
+                                                            <a href="basictemplate.html" class="create-c-btn">Use This Template</a>
 
                                                         </div>
                                                     </div>
@@ -805,7 +806,7 @@
 
 
                                             <div class="use-template">
-                                                <a href="basic_template.html">
+                                                <a href="basictemplate.html">
                                                     <button class="g-btn"> Select Template</button>
                                                 </a>
 
@@ -871,7 +872,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer justify-content-center">
-                                                            <a href="basic_template.html" class="create-c-btn">Use This Template</a>
+                                                            <a href="basictemplate.html" class="create-c-btn">Use This Template</a>
 
                                                         </div>
                                                     </div>
@@ -880,7 +881,7 @@
 
 
                                             <div class="use-template">
-                                                <a href="basic_template.html">
+                                                <a href="basictemplate.html">
                                                     <button class="g-btn"> Select Template</button>
                                                 </a>
 
@@ -952,7 +953,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer justify-content-center">
-                                                            <a href="basic_template.html" class="create-c-btn">Use This Template</a>
+                                                            <a href="basictemplate.html" class="create-c-btn">Use This Template</a>
 
                                                         </div>
                                                     </div>
@@ -961,7 +962,7 @@
 
 
                                             <div class="use-template">
-                                                <a href="basic_template.html">
+                                                <a href="basictemplate.html">
                                                     <button class="g-btn"> Select Template</button>
                                                 </a>
 
@@ -1002,13 +1003,13 @@
 
     <!--=== All Plugin ===-->
     <!--============= Jquery-3.6.0 =============-->
-    <script type="text/javascript " src="assets/js/jquery-3.6.0.min.js "></script>
+    <script src="assets/js/jquery-3.6.0.min.js "></script>
     <!--=== Popper  v2.9.2 js ===-->
     <script src="assets/js/popper.min.js"></script>
     <!--=== Bootstrap4 js ===-->
-    <script type="text/javascript " src="assets/js/bootstrap.min.js "></script>
+    <script src="assets/js/bootstrap.min.js "></script>
     <!--=== Main js ===-->
-    <script type="text/javascript " src="assets/js/main.js "></script>
+    <script src="assets/js/main.js "></script>
 </body>
 
 </html>

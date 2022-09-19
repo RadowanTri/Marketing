@@ -35,11 +35,9 @@
                 </button>
                 <!-- Sidebar - Brand -->
                 <a href="index.html">
-
                     <div class="sidebar-brand-icon rotate-n-15">
                         <img src="assets/img/logo-top.png" alt="" class="logo">
                     </div>
-                    <!-- <div class="sidebar-brand-text mx-3"> Marketing</div> -->
                 </a>
             </div>
 
@@ -50,21 +48,19 @@
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
-
                 </a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#Campaign" role="button" aria-expanded="false" aria-controls="Campaign">
+                <a class="nav-link collapsed" data-bs-toggle="collapse" href="#Campaign" role="button" aria-expanded="false" aria-controls="Campaign">
                     <i class="fa-solid fa-microphone"></i>
                     <span>Campaign</span>
                 </a>
-                <div id="Campaign" class="collapse">
+                <div id="Campaign" class="collapse show">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="campaign1.html">All Campaign</a>
-                        <a class="collapse-item" href="campaign2.html">Email Campaign</a>
-                        <a class="collapse-item" href="smscampaign.html">Sms Campaign</a>
+                        <a class="collapse-item active" href="campaign1.html">Email Campaign</a>
+                        <a class="collapse-item " href="smscampaign.html">Sms Campaign</a>
                     </div>
                 </div>
             </li>
@@ -74,27 +70,30 @@
                 <a class="nav-link" href="anlytic.html">
                     <i class="fa-solid fa-chart-line"></i>
                     <span>Analytics</span>
-
                 </a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
             <li class="nav-item">
                 <a class="nav-link" href="customer.html">
-
                     <i class="fa-solid fa-person"></i>
                     <span>Customer</span>
-
                 </a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
             <li class="nav-item">
                 <a class="nav-link" href="product.html">
-
                     <i class="fab fa-product-hunt"></i>
                     <span>Product</span>
-
+                </a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            <li class="nav-item">
+                <a class="nav-link" href="Contact.html">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span>Contact</span>
                 </a>
             </li>
             <!-- Divider -->
@@ -106,12 +105,12 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <nav class="navbar navbar-expand navbar-light bg-white topbar static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <button class="sm-block-b" id="sidebarToggleTop">
-    <i class="fa fa-bars"></i>
-</button>
+                        <i class="fa fa-bars"></i>
+                    </button>
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ms-auto">
@@ -256,31 +255,15 @@
                 <div class="container-fluid">
                     <div class="container-wrappero">
                         <div class="content-page-header mb-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="page-title2">
-                                        <a href="campaign1.html">
-                                            <i class="fas fa-th-large"></i>
-                                            <span>Campaign</span>
-                                        </a>
-                                    </h4>
-                                    <span class="arrow-l">
-                                        <i class="fa-solid fa-angle-right"></i>
-                                    </span>
-                                    <h4 class="page-title2">
-                                        <a href="campaign1.html">
-                                            <span class="ms-1"> Email Campaigns </span>
-                                        </a>
-                                    </h4>
-                                    <span class="arrow-l">
-                                        <i class="fa-solid fa-angle-right"></i>
-                                    </span>
-                                    <h4 class="page-title2">
-                                        <span class="ms-1 txtcnt"> Radowan</span>
-                                    </h4>
-
+                            <div class="content-page-header mb-4">
+                                <div class="breadcrumb-header mb-4">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb content_shadow">
+                                            <li class="breadcrumb-item"><a href="#">Campaign</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Email Campaign </li>
+                                        </ol>
+                                    </nav>
                                 </div>
-                                <!-- end card body-->
                             </div>
                         </div>
                         <div class="content-body  mb-4">
@@ -439,7 +422,7 @@
                                                 <div class="row">
                                                     <div class="col-md-4">
                                                         <div class="template-wrapper text-center">
-                                                            <a href="save_template.html">
+                                                            <a href="savetemplate.html">
                                                                 <img src="assets/img/windows.png" alt="">
                                                                 <h3 class="template-h my-3">
                                                                     Save Templates
@@ -450,7 +433,7 @@
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="template-wrapper text-center">
-                                                            <a href="save_template.html">
+                                                            <a href="savetemplate.html">
                                                                 <img src="assets/img/layout.png" alt="">
                                                                 <h3 class="template-h my-3">
                                                                     Pre-Design Templates
@@ -461,7 +444,7 @@
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="template-wrapper text-center">
-                                                            <a href="basic_template.html">
+                                                            <a href="basictemplate.html">
                                                                 <img src="assets/img/template.png" alt="">
                                                                 <h3 class="template-h my-3">
                                                                     Basic Templates
@@ -1054,13 +1037,20 @@
 
     <!--=== All Plugin ===-->
     <!--============= Jquery-3.6.0 =============-->
-    <script type="text/javascript " src="assets/js/jquery-3.6.0.min.js "></script>
+    <script src="assets/js/jquery-3.6.0.min.js "></script>
     <!--=== Popper  v2.9.2 js ===-->
     <script src="assets/js/popper.min.js"></script>
     <!--=== Bootstrap4 js ===-->
-    <script type="text/javascript " src="assets/js/bootstrap.min.js "></script>
+    <script src="assets/js/bootstrap.min.js "></script>
     <!--=== Main js ===-->
-    <script type="text/javascript " src="assets/js/main.js "></script>
+    <script src="assets/js/main.js "></script>
+</body>
+
+</html>ript src="assets/js/popper.min.js"></script>
+<!--=== Bootstrap4 js ===-->
+<script src="assets/js/bootstrap.min.js "></script>
+<!--=== Main js ===-->
+<script src="assets/js/main.js "></script>
 </body>
 
 </html>

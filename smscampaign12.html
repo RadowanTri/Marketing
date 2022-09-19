@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
     <!--=== Bootstrap 4 ===-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/4.1.0/css/fixedColumns.dataTables.min.css">
     <!--=== Main Css ===-->
     <link rel="stylesheet" href="assets/css/default.css">
     <!--=== Style & Responsive  Css ===-->
@@ -35,9 +37,11 @@
                 </button>
                 <!-- Sidebar - Brand -->
                 <a href="index.html">
+
                     <div class="sidebar-brand-icon rotate-n-15">
                         <img src="assets/img/logo-top.png" alt="" class="logo">
                     </div>
+                    <!-- <div class="sidebar-brand-text mx-3"> Marketing</div> -->
                 </a>
             </div>
 
@@ -48,6 +52,7 @@
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
+
                 </a>
             </li>
             <!-- Divider -->
@@ -57,10 +62,10 @@
                     <i class="fa-solid fa-microphone"></i>
                     <span>Campaign</span>
                 </a>
-                <div id="Campaign" class="collapse show">
+                <div id="Campaign" class="collapse">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="campaign1.html">Email Campaign</a>
-                        <a class="collapse-item active" href="smscampaign.html">Sms Campaign</a>
+                        <a class="collapse-item active" href="campaign1.html">Email Campaign</a>
+                        <a class="collapse-item" href="smscampaign.html">Sms Campaign</a>
                     </div>
                 </div>
             </li>
@@ -68,22 +73,27 @@
             <hr class="sidebar-divider">
             <li class="nav-item">
                 <a class="nav-link" href="anlytic.html">
+
                     <i class="fa-solid fa-chart-line"></i>
                     <span>Analytics</span>
+
                 </a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
             <li class="nav-item">
                 <a class="nav-link" href="customer.html">
+
                     <i class="fa-solid fa-person"></i>
                     <span>Customer</span>
+
                 </a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
             <li class="nav-item">
                 <a class="nav-link" href="product.html">
+
                     <i class="fab fa-product-hunt"></i>
                     <span>Product</span>
                 </a>
@@ -91,8 +101,8 @@
             <!-- Divider -->
             <hr class="sidebar-divider">
             <li class="nav-item">
-                <a class="nav-link" href="Contact.html">
-                    <i class="fa-solid fa-address-book"></i>
+                <a class="nav-link" href="contact.html">
+                    <i class="fab fa-product-hunt"></i>
                     <span>Contact</span>
                 </a>
             </li>
@@ -254,32 +264,34 @@
                 <div class="container-fluid">
                     <div class="container-wrappero">
                         <div class="content-page-header mb-4">
-                            <div class="breadcrumb-header mb-4">
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb content_shadow">
-                                        <li class="breadcrumb-item"><a href="#">Campaign</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">SMS Campaign </li>
-                                    </ol>
-                                </nav>
+                            <div class="card">
+                                <div class="card-body d-flex justify-content-between align-items-center gap-3 ">
+                                    <h4 class="page-title">
+                                        <a href="#">
+                                            <i class="fas fa-th-large"></i>
+                                            <span> Contact </span>
+                                        </a>
+                                    </h4>
+                                    <div class="select-campaign-t">
+                                        <div class="sorted-by ">
+                                            <div class="dropdown">
+                                                <button class="btn-transparent border p-2 f-16 dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Add New
+                                                </button>
+                                                <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton3">
+                                                    <li><a class="dropdown-item active" href="addContact.html">Contact</a></li>
+                                                    <li><a class="dropdown-item" href="MultiaddContact.html">Multiple Contact</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end card body-->
                             </div>
                         </div>
                         <div class="content-body  mb-4">
                             <div class="all-campaigns">
-                                <div class="all-cam-top">
-                                    <div class="dropdown">
-                                        <button class="btn-transparent f-18 p1-color dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            All Campaign
-                                        </button>
-                                        <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item active" href="#">All Campaign</a></li>
-                                            <li><a class="dropdown-item" href="#">Sent Campaign</a></li>
-                                            <li><a class="dropdown-item" href="#">Delete Campaign</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="create-campaign">
-                                        <a href="createsmscampaign.html" class="create-c-btn">Create Campaign</a>
-                                    </div>
-                                </div>
                                 <div class="all-campaigns-body shadow">
                                     <div class="filter-campaign">
                                         <p class="filter-h f-18 mb-3">Filter</p>
@@ -288,7 +300,7 @@
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                                                 <label class="form-check-label mb-2" for="flexCheckChecked">
-                                                    Campaign Owner
+                                                    Contact Owner
                                                 </label>
                                             </div>
                                             <div class="campaign-owner-box">
@@ -299,7 +311,7 @@
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                                 <label class="form-check-label" for="flexCheckDefault">
-                                                    SMS Gateway
+                                                    Tags
                                                 </label>
                                             </div>
                                         </div>
@@ -307,119 +319,71 @@
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
                                                 <label class="form-check-label" for="flexCheckDefault2">
-                                                    SMS Status
+                                                   Score
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="campaign-owner mb-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Associated">
+                                                <label class="form-check-label" for="Associated">
+                                                   Associated Topics
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="campaign-owner mb-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                                                <label class="form-check-label" for="flexCheckDefault4">
+                                                   Activity
                                                 </label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="select-campaign ">
-                                        <div class="select-campaign-t">
-                                            <div class="select-all">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                                                    <label class="form-check-label f-15" for="flexCheckDefault3">
-                                                        Select All
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="sorted-by d-flex align-items-center gap-3">
-                                                <button class="search-icon">
-                                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                                </button>
-                                                <div class="dropdown">
-                                                    <button class="btn-transparent f-15 dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        Sort by : Recently Created 
-                                                        <i class="fas fa-chevron-down me-1"></i>
-                                                    </button>
-                                                    <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton2">
-                                                        <li><a class="dropdown-item active" href="#">Recently Created</a></li>
-                                                        <li><a class="dropdown-item" href="#">Creation Date</a></li>
-                                                        <li><a class="dropdown-item" href="#"> Last Modified</a></li>
-                                                        <li><a class="dropdown-item" href="#">  Ascending Order</a></li>
-                                                        <li><a class="dropdown-item" href="#">  Descending Order</a></li>
-                                                    </ul>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="select-campaign-b">
-                                            <div class="card">
-                                                <ul class="list-group">
-                                                    <li class="list-group-item">
-                                                        <div class="list-group-item-wrapper d-flex gap-3">
-                                                            <div class="select-campaign-reviewed">
-                                                                <h4 class="cam-title-name">Timerni</h4>
-                                                                <p><b class="sts"></b> To Be Reviewed | Created on Jul 25, 2022 04:32 PM
-                                                                </p>
+                                        <div class="select-campaign-b conatact-table">
+                                            <table id="example" class="stripe row-border order-column" style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="AllEmail">
+                                                                <label for="AllEmail">Contact Email</label>
                                                             </div>
-                                                        </div>
-                                                        <div class="dropdown">
-                                                            <a href="#" class="btn-transparent f-16 dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <button type="button" class="bg-transparent" data-bs-toggle="tooltip" data-bs-placement="top" title="More">
-                                                                    <i class="fa-solid fa-ellipsis"></i>
-                                                                </button>
-                                                            </a>
+                                                        </th>
+                                                        <th>
+                                                            <label>First name</label>
+                                                        </th>
+                                                        <th>
+                                                            <label> Last name</label>
+                                                        </th>
+                                                        <th>
+                                                            <label>Company name</label> </th>
+                                                        <th>
+                                                            <label>Phone</label> </th>
+                                                        <th>
+                                                            <label>Mobile</label> </th>
 
-                                                            <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton3">
-                                                                <li><a class="dropdown-item " href="#">Edit subject and sender details</a></li>
-                                                                <li><a class="dropdown-item" href="#">Add Content</a></li>
-                                                                <li><a class="dropdown-item" href="#"> Delete campaign</a></li>
-
-                                                            </ul>
-                                                        </div>
-
-
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <div class="list-group-item-wrapper d-flex gap-3">
-                                                            <div class="select-campaign-reviewed">
-                                                                <h4 class="cam-title-name">Timerni</h4>
-                                                                <p><b class="sts"></b> To Be Reviewed | Created on Jul 25, 2022 04:32 PM
-                                                                </p>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="emailf">
+                                                                <label for="emailf">timeresarch@gmail.com</label>
                                                             </div>
-                                                        </div>
-                                                        <div class="dropdown">
-                                                            <a href="#" class="btn-transparent f-16 dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <button type="button" class="bg-transparent show" data-bs-toggle="tooltip" data-bs-placement="top" title="More">
-                                                                    <i class="fa-solid fa-ellipsis"></i>
-                                                                </button>
-                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <label>Nixon</label>
+                                                        </td>
+                                                        <td> <label>Edinburgh</label> </td>
+                                                        <td> <label>Time Research & Innovation</label> </td>
+                                                        <td> <label> +224111</label> </td>
+                                                        <td> <label>0120110425</label> </td>
 
-                                                            <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton4">
-                                                                <li><a class="dropdown-item " href="#">Edit subject and sender details</a></li>
-                                                                <li><a class="dropdown-item" href="#">Add Content</a></li>
-                                                                <li><a class="dropdown-item" href="#"> Delete campaign</a></li>
-
-                                                            </ul>
-                                                        </div>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <div class="list-group-item-wrapper d-flex gap-3">
-                                                            <div class="select-campaign-reviewed">
-                                                                <h4 class="cam-title-name">Timerni</h4>
-                                                                <p><b class="sts"></b> To Be Reviewed | Created on Jul 25, 2022 04:32 PM
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="dropdown">
-                                                            <a href="#" class="btn-transparent f-16 dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <button type="button" class="bg-transparent" data-bs-toggle="tooltip" data-bs-placement="top" title="More">
-                                                                    <i class="fa-solid fa-ellipsis"></i>
-                                                                </button>
-                                                            </a>
-
-                                                            <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton5">
-                                                                <li><a class="dropdown-item " href="#">Edit subject and sender details</a></li>
-                                                                <li><a class="dropdown-item" href="#">Add Content</a></li>
-                                                                <li><a class="dropdown-item" href="#"> Delete campaign</a></li>
-
-                                                            </ul>
-                                                        </div>
-
-
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
@@ -436,13 +400,30 @@
 
     <!--=== All Plugin ===-->
     <!--============= Jquery-3.6.0 =============-->
-    <script src="assets/js/jquery-3.6.0.min.js "></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedcolumns/4.1.0/js/dataTables.fixedColumns.min.js"></script>
     <!--=== Popper  v2.9.2 js ===-->
     <script src="assets/js/popper.min.js "></script>
     <!--=== Bootstrap4 js ===-->
     <script src="assets/js/bootstrap.min.js "></script>
     <!--=== Main js ===-->
     <script src="assets/js/main.js "></script>
+    <script>
+        $(document).ready(function() {
+            var table = $('#example').removeAttr('width').DataTable({
+                scrollY: "300px",
+                scrollX: true,
+                scrollCollapse: true,
+                paging: false,
+                columnDefs: [{
+                    width: 200,
+                    targets: 0
+                }],
+                fixedColumns: true
+            });
+        });
+    </script>
 </body>
 
 </html>
