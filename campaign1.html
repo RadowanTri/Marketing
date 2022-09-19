@@ -55,13 +55,18 @@
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
-            <li class="nav-item  active">
-                <a class="nav-link" href="campaign1.html">
-
-                    <i class="fa-solid fa-microphone"></i>
-                    <span>Campaign</span>
-
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" href="#User" role="button" aria-expanded="false" aria-controls="User">
+                    <i class="fas fa-university"></i>
+                    <span>User</span>
                 </a>
+                <div id="User" class="collapse">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="manageuser.html">Manage User</a>
+                        <a class="collapse-item" href="rolepermission.html">Role Permission</a>
+                    </div>
+                </div>
+
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -106,8 +111,8 @@
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <button class="sm-block-b" id="sidebarToggleTop">
-    <i class="fa fa-bars"></i>
-</button>
+                        <i class="fa fa-bars"></i>
+                    </button>
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ms-auto">
@@ -118,7 +123,6 @@
 
                         </li>
                         <!-- Nav Item - Notification -->
-
 
                         <li class="nav-item dropdown no-arrow mx-1 ">
                             <a class="nav-link dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">

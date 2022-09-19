@@ -55,18 +55,23 @@
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
-            <li class="nav-item ">
-                <a class="nav-link" href="campaign1.html">
-
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-toggle="collapse" href="#Campaign" role="button" aria-expanded="false" aria-controls="Campaign">
                     <i class="fa-solid fa-microphone"></i>
                     <span>Campaign</span>
-
                 </a>
+                <div id="Campaign" class="collapse">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="campaign1.html">All Campaign</a>
+                        <a class="collapse-item" href="campaign2.html">Email Campaign</a>
+                        <a class="collapse-item" href="smscampaign.html">Sms Campaign</a>
+                    </div>
+                </div>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
-            <li class="nav-item ">
-                <a class="nav-link " href="anlytic.html">
+            <li class="nav-item">
+                <a class="nav-link" href="anlytic.html">
 
                     <i class="fa-solid fa-chart-line"></i>
                     <span>Analytics</span>
@@ -103,11 +108,11 @@
 
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar static-top shadow">
+
                     <!-- Sidebar Toggle (Topbar) -->
                     <button class="sm-block-b" id="sidebarToggleTop">
                         <i class="fa fa-bars"></i>
                     </button>
-
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ms-auto">
@@ -118,7 +123,6 @@
 
                         </li>
                         <!-- Nav Item - Notification -->
-
 
                         <li class="nav-item dropdown no-arrow mx-1 ">
                             <a class="nav-link dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -254,22 +258,141 @@
                         <div class="content-page-header mb-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="page-title">
-                                        <a href="index.html" class="icon-hover">
-                                            <i class="fa-solid fa-arrow-left-long"></i>
-                                        </a>
-                                        <span class="ms-2">
-                                            Upcoming</span>
-                                    </h4>
 
+
+                                    <h4 class="page-title">
+                                        <a href="#">
+                                            <i class="fas fa-th-large"></i>
+                                            <span> Customer </span>
+                                        </a>
+                                    </h4>
 
 
                                 </div>
                                 <!-- end card body-->
                             </div>
                         </div>
-                        <div class="content-body bg-white ">
+                        <div class="content-body  mb-4">
+                            <div class="all-campaigns customerWrapper">
+                                <div class="all-cam-top">
+                                    <div class="dropdown">
+                                        <button class="btn-transparent f-18 p1-color dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            All Customer
+                                        </button>
+                                        <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item active" href="#">All Customer</a></li>
+                                            <li><a class="dropdown-item" href="#">Sent Customer</a></li>
+                                            <li><a class="dropdown-item" href="#">Delete Customer</a></li>
+                                        </ul>
+                                    </div>
 
+                                </div>
+                                <div class="all-campaigns-body shadow">
+                                    <div class="filter-customer">
+                                        <p class="filter-h f-18 mb-3">Filter</p>
+                                        <form action="">
+                                            <div class="search-bar mb-3">
+                                                <div class="search">
+                                                    <input type="search" class="search_input" placeholder="Search">
+                                                    <button class="search_btn">Search</button>
+                                                </div>
+                                            </div>
+                                            <div class="terms mb-3">
+                                                <input type="checkbox" id="customerName">
+                                                <label for="customerName">Customer Name</label>
+                                            </div>
+                                            <div class="terms mb-3">
+                                                <input type="checkbox" id="customerEmail">
+                                                <label for="customerEmail">Customer Email</label>
+                                            </div>
+
+
+                                        </form>
+
+                                    </div>
+                                    <div class="select-campaign ">
+
+                                        <div class="select-campaign-b">
+                                            <div class="card">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">
+                                                        <div class="list-group-item-wrapper d-flex gap-lg-4 gap-md-3 align-items-center">
+
+                                                            <div class="select-campaign-reviewed customer-name">
+                                                                <h4 class="cam-title-name">Timerni</h4>
+                                                                <p><b class="sts"></b> Created By Radowan
+                                                                </p>
+                                                            </div>
+                                                            <div class="customer-email span-bar">
+                                                                <a href="#">
+                                                                    radowanbhuiyantri@gmail.com
+                                                                </a>
+                                                            </div>
+                                                            <div class="customer-phone span-bar">
+                                                                <a href="#" class="txt">
+                                                                    018535464513
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="btn-transparent f-16 dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <button type="button" class="bg-transparent" data-bs-toggle="tooltip" data-bs-placement="top" title="More">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                            </a>
+
+                                                            <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton3">
+                                                                <li><a class="dropdown-item " href="#">Edit Name</a></li>
+                                                                <li><a class="dropdown-item" href="#">Edit Email</a></li>
+                                                                <li><a class="dropdown-item" href="#"> Edit Phone</a></li>
+
+                                                            </ul>
+                                                        </div>
+
+
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="list-group-item-wrapper d-flex gap-lg-4 gap-md-3 align-items-center">
+
+                                                            <div class="select-campaign-reviewed customer-name">
+                                                                <h4 class="cam-title-name">Timerni</h4>
+                                                                <p><b class="sts"></b> Created By Radowan
+                                                                </p>
+                                                            </div>
+                                                            <div class="customer-email span-bar">
+                                                                <a href="#">
+                                                                    radowanbhuiyantri@gmail.com
+                                                                </a>
+                                                            </div>
+                                                            <div class="customer-phone span-bar">
+                                                                <a href="#" class="txt">
+                                                                    018535464513
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="btn-transparent f-16 dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <button type="button" class="bg-transparent" data-bs-toggle="tooltip" data-bs-placement="top" title="More">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                            </a>
+
+                                                            <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton3">
+                                                                <li><a class="dropdown-item " href="#">Edit Name</a></li>
+                                                                <li><a class="dropdown-item" href="#">Edit Email</a></li>
+                                                                <li><a class="dropdown-item" href="#"> Edit Phone</a></li>
+
+                                                            </ul>
+                                                        </div>
+
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -279,7 +402,6 @@
         </div>
         <!-- End of Sidebar -->
     </div>
-
 
     <!--=== All Plugin ===-->
     <!--============= Jquery-3.6.0 =============-->
@@ -293,32 +415,3 @@
 </body>
 
 </html>
-<div class="create-list-modal">
-
-
-    <!-- Modal -->
-    <div class="modal fade list-modal" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Mailing List Creation</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body mt-4">
-                    <form action="">
-                        <div class="row mb-4 ">
-                            <div class="col-lg-4 col-xl-3">
-                                <label for="campaignList" class="form-label mt-2">Name <span class="txtreq">*</span></label>
-                            </div>
-                            <div class="col-lg-8 col-xl-9">
-                                <input type="text" class="form-control" id="campaignList" aria-describedby="campaignList">
-                            </div>
-                        </div>
-
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>

@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
     <!--=== Bootstrap 4 ===-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/4.1.0/css/fixedColumns.dataTables.min.css">
     <!--=== Main Css ===-->
     <link rel="stylesheet" href="assets/css/default.css">
     <!--=== Style & Responsive  Css ===-->
@@ -80,7 +82,7 @@
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
-            <li class="nav-item ">
+            <li class="nav-item">
                 <a class="nav-link" href="customer.html">
 
                     <i class="fa-solid fa-person"></i>
@@ -90,7 +92,7 @@
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="product.html">
 
                     <i class="fab fa-product-hunt"></i>
@@ -257,62 +259,106 @@
                     <div class="container-wrappero">
                         <div class="content-page-header mb-4">
                             <div class="card">
-                                <div class="card-body">
-
-
+                                <div class="card-body d-flex justify-content-between align-items-center gap-3 ">
                                     <h4 class="page-title">
                                         <a href="#">
                                             <i class="fas fa-th-large"></i>
-                                            <span> Product </span>
+                                            <span> Campaigns </span>
                                         </a>
                                     </h4>
+                                    <div class="select-campaign-t">
+                                        <div class="sorted-by ">
+                                            <div class="dropdown">
+                                                <button class="btn-transparent border p-2 f-16 dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Add New
+                                                </button>
+                                                <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton3">
+                                                    <li><a class="dropdown-item active" href="smsContact.html">Contact</a></li>
+                                                    <li><a class="dropdown-item" href="MultismsContact.html">Multiple Contact</a></li>
+                                                    <li><a class="dropdown-item" href="#"> Last Modified</a></li>
+                                                    <li><a class="dropdown-item" href="#">  Ascending Order</a></li>
+                                                    <li><a class="dropdown-item" href="#">  Descending Order</a></li>
+                                                </ul>
+                                            </div>
 
-
+                                        </div>
+                                    </div>
                                 </div>
                                 <!-- end card body-->
                             </div>
                         </div>
                         <div class="content-body  mb-4">
-                            <div class="all-campaigns productWrapper">
+                            <div class="all-campaigns">
                                 <div class="all-cam-top">
                                     <div class="dropdown">
-                                        <button class="btn-transparent f-18 p1-color dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            All Product
+                                        <button class="btn-transparent f-18 p1-color dropdown-toggle" type="button" id="dropdownMenuButton54" data-bs-toggle="dropdown" aria-expanded="false">
+                                            All Sms
                                         </button>
-                                        <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item active" href="#">All Product</a></li>
-                                            <li><a class="dropdown-item" href="#">Update Product</a></li>
-
+                                        <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton54">
+                                            <li><a class="dropdown-item active" href="#">All Sms</a></li>
+                                            <li><a class="dropdown-item" href="#">Sent Sms</a></li>
+                                            <li><a class="dropdown-item" href="#">Delete Sms</a></li>
                                         </ul>
                                     </div>
-
                                 </div>
                                 <div class="all-campaigns-body shadow">
-                                    <div class="filter-product">
+                                    <div class="filter-campaign">
                                         <p class="filter-h f-18 mb-3">Filter</p>
-                                        <form action="">
-                                            <div class="search-bar mb-3">
-                                                <div class="search">
-                                                    <input type="search" class="search_input" placeholder="Search">
-                                                    <button class="search_btn">Search</button>
-                                                </div>
-                                            </div>
-                                            <div class="terms mb-3">
-                                                <input type="checkbox" id="ProductName">
-                                                <label for="ProductName">Product Name</label>
-                                            </div>
-                                            <div class="terms mb-3">
-                                                <input type="checkbox" id="ProductId">
-                                                <label for="ProductId">Product ID</label>
-                                            </div>
 
-
-                                        </form>
-
+                                        <div class="campaign-owner mb-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                <label class="form-check-label mb-2" for="flexCheckChecked">
+                                                    Contact Owner
+                                                </label>
+                                            </div>
+                                            <div class="campaign-owner-box">
+                                                <p>Me</p>
+                                            </div>
+                                        </div>
+                                        <div class="campaign-owner mb-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Tags
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="campaign-owner mb-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                                                <label class="form-check-label" for="flexCheckDefault2">
+                                                   Score
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="campaign-owner mb-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                                                <label class="form-check-label" for="flexCheckDefault3">
+                                                   Associated Topics
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="campaign-owner mb-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                                                <label class="form-check-label" for="flexCheckDefault4">
+                                                   Activity
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="select-campaign ">
                                         <div class="select-campaign-t">
-
+                                            <div class="select-all">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                                                    <label class="form-check-label f-15" for="flexCheckDefault3">
+                                                        Select All
+                                                    </label>
+                                                </div>
+                                            </div>
                                             <div class="sorted-by d-flex align-items-center gap-3">
                                                 <button class="search-icon">
                                                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -333,71 +379,8 @@
 
                                             </div>
                                         </div>
-                                        <div class="select-campaign-b">
-                                            <div class="card">
-                                                <div class="product-table">
-                                                    <table class="table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col">
-                                                                    <div class="d-flex gap-2">
-                                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                                                                        <p>Product Name</p>
-                                                                    </div>
+                                        <div class="select-campaign-b sms-table">
 
-                                                                </th>
-                                                                <th scope="col">
-                                                                    <p>Product Id</p>
-                                                                </th>
-                                                                <th scope="col">
-                                                                    <p>Product Active</p>
-                                                                </th>
-                                                                <th scope="col">
-                                                                    <p>Product Owner</p>
-                                                                </th>
-                                                                <th scope="col">
-
-                                                                </th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td data-label="ProductName">
-                                                                    <div class="d-flex gap-2 flex-end-md">
-                                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                                                                        <p>Email </p>
-                                                                    </div>
-                                                                </td>
-                                                                <td data-label="ProductId">
-                                                                    <p>15344455</p>
-                                                                </td>
-                                                                <td data-label="ProductActive">
-                                                                    <p>
-                                                                        <i class="fas fa-check"></i>
-                                                                    </p>
-                                                                </td>
-                                                                <td data-label="ProductOwner">Radowan</td>
-                                                                <td>
-                                                                    <div class="dropdown">
-                                                                        <a href="#" class="btn-transparent f-16 dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                            <button type="button" class="bg-transparent show" data-bs-toggle="tooltip" data-bs-placement="top" title="More">
-                                                                                <i class="fa-solid fa-ellipsis"></i>
-                                                                            </button>
-                                                                        </a>
-
-                                                                        <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton4">
-                                                                            <li><a class="dropdown-item " href="#">Edit Product</a></li>
-
-
-                                                                        </ul>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -414,13 +397,30 @@
 
     <!--=== All Plugin ===-->
     <!--============= Jquery-3.6.0 =============-->
-    <script type="text/javascript " src="assets/js/jquery-3.6.0.min.js "></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedcolumns/4.1.0/js/dataTables.fixedColumns.min.js"></script> -->
     <!--=== Popper  v2.9.2 js ===-->
     <script src="assets/js/popper.min.js "></script>
     <!--=== Bootstrap4 js ===-->
-    <script type="text/javascript " src="assets/js/bootstrap.min.js "></script>
+    <script src="assets/js/bootstrap.min.js "></script>
     <!--=== Main js ===-->
-    <script type="text/javascript " src="assets/js/main.js "></script>
+    <script src="assets/js/main.js "></script>
+    <!-- <script>
+        $(document).ready(function() {
+            var table = $('#example').removeAttr('width').DataTable({
+                scrollY: "300px",
+                scrollX: true,
+                scrollCollapse: true,
+                paging: false,
+                columnDefs: [{
+                    width: 200,
+                    targets: 0
+                }],
+                fixedColumns: true
+            });
+        });
+    </script> -->
 </body>
 
 </html>

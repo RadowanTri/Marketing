@@ -80,7 +80,7 @@
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
-            <li class="nav-item ">
+            <li class="nav-item">
                 <a class="nav-link" href="customer.html">
 
                     <i class="fa-solid fa-person"></i>
@@ -90,7 +90,7 @@
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="product.html">
 
                     <i class="fab fa-product-hunt"></i>
@@ -257,150 +257,151 @@
                     <div class="container-wrappero">
                         <div class="content-page-header mb-4">
                             <div class="card">
-                                <div class="card-body">
-
-
+                                <div class="card-body d-flex justify-content-between align-items-center gap-3 ">
                                     <h4 class="page-title">
-                                        <a href="#">
-                                            <i class="fas fa-th-large"></i>
-                                            <span> Product </span>
-                                        </a>
+                                        <span> Add Multiple Contacts
+                                        </span>
                                     </h4>
-
 
                                 </div>
                                 <!-- end card body-->
                             </div>
                         </div>
                         <div class="content-body  mb-4">
-                            <div class="all-campaigns productWrapper">
-                                <div class="all-cam-top">
-                                    <div class="dropdown">
-                                        <button class="btn-transparent f-18 p1-color dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            All Product
-                                        </button>
-                                        <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item active" href="#">All Product</a></li>
-                                            <li><a class="dropdown-item" href="#">Update Product</a></li>
+                            <div class="add-sms contact-modal">
+                                <form action="">
+                                    <div class="table-scroll">
+                                        <table class="table table-bordered table-sm" cellspacing="0">
 
-                                        </ul>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" class="email">Email</th>
+                                                    <th scope="col" class="w-200">First Name</th>
+                                                    <th scope="col" class="w-200">Last Name</th>
+                                                    <th scope="col" class="w-200">Company Name</th>
+                                                    <th scope="col" class="w-200">Contact Number</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <input type="email" class="form-control" placeholder="Contact Email">
+                                                    </th>
+                                                    <td>
+                                                        <input type="text" class="form-control" placeholder="First Name">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control" placeholder="Last Name">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control" placeholder="Company Name">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control" placeholder="Contact Number">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <input type="email" class="form-control" placeholder="Contact Email">
+                                                    </th>
+                                                    <td>
+                                                        <input type="text" class="form-control" placeholder="First Name">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control" placeholder="Last Name">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control" placeholder="Company Name">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control" placeholder="Contact Number">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <input type="email" class="form-control" placeholder="Contact Email">
+                                                    </th>
+                                                    <td>
+                                                        <input type="text" class="form-control" placeholder="First Name">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control" placeholder="Last Name">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control" placeholder="Company Name">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control" placeholder="Contact Number">
+                                                    </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
                                     </div>
-
-                                </div>
-                                <div class="all-campaigns-body shadow">
-                                    <div class="filter-product">
-                                        <p class="filter-h f-18 mb-3">Filter</p>
-                                        <form action="">
-                                            <div class="search-bar mb-3">
-                                                <div class="search">
-                                                    <input type="search" class="search_input" placeholder="Search">
-                                                    <button class="search_btn">Search</button>
+                                    <div class="mb-3 mt-4">
+                                        <div class="row">
+                                            <div class="col-lg-8 col-xl-6 col-sm-12">
+                                                <label for="SubscriptionType" class="form-label">Subscription Type</label>
+                                                <div>
+                                                    <select class="form-select" aria-describedby="SubscriptionType">
+                                                        <option selected="">Select a Topic</option>
+                                                        <option value="1">Brand Topic</option>
+                                                        <option value="2">Marketing</option>
+                                                    </select>
                                                 </div>
-                                            </div>
-                                            <div class="terms mb-3">
-                                                <input type="checkbox" id="ProductName">
-                                                <label for="ProductName">Product Name</label>
-                                            </div>
-                                            <div class="terms mb-3">
-                                                <input type="checkbox" id="ProductId">
-                                                <label for="ProductId">Product ID</label>
-                                            </div>
 
-
-                                        </form>
-
-                                    </div>
-                                    <div class="select-campaign ">
-                                        <div class="select-campaign-t">
-
-                                            <div class="sorted-by d-flex align-items-center gap-3">
-                                                <button class="search-icon">
-                                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                                </button>
-                                                <div class="dropdown">
-                                                    <button class="btn-transparent f-15 dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        Sort by : Recently Created 
-                                                        <i class="fas fa-chevron-down me-1"></i>
-                                                    </button>
-                                                    <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton2">
-                                                        <li><a class="dropdown-item active" href="#">Recently Created</a></li>
-                                                        <li><a class="dropdown-item" href="#">Creation Date</a></li>
-                                                        <li><a class="dropdown-item" href="#"> Last Modified</a></li>
-                                                        <li><a class="dropdown-item" href="#">  Ascending Order</a></li>
-                                                        <li><a class="dropdown-item" href="#">  Descending Order</a></li>
-                                                    </ul>
+                                                <div class="terms mt-3">
+                                                    <input type="checkbox" id="sType">
+                                                    <label for="sType" class="form-text">Overwrite the subscription type for the existing contacts</label>
+                                                </div>
+                                                <div class="terms mt-3">
+                                                    <input type="checkbox" id="contacts">
+                                                    <label for="contacts" class="form-text">These contacts have given consent to receive emails relevant to my product</label>
                                                 </div>
 
                                             </div>
                                         </div>
-                                        <div class="select-campaign-b">
-                                            <div class="card">
-                                                <div class="product-table">
-                                                    <table class="table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col">
-                                                                    <div class="d-flex gap-2">
-                                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                                                                        <p>Product Name</p>
-                                                                    </div>
 
-                                                                </th>
-                                                                <th scope="col">
-                                                                    <p>Product Id</p>
-                                                                </th>
-                                                                <th scope="col">
-                                                                    <p>Product Active</p>
-                                                                </th>
-                                                                <th scope="col">
-                                                                    <p>Product Owner</p>
-                                                                </th>
-                                                                <th scope="col">
-
-                                                                </th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td data-label="ProductName">
-                                                                    <div class="d-flex gap-2 flex-end-md">
-                                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                                                                        <p>Email </p>
-                                                                    </div>
-                                                                </td>
-                                                                <td data-label="ProductId">
-                                                                    <p>15344455</p>
-                                                                </td>
-                                                                <td data-label="ProductActive">
-                                                                    <p>
-                                                                        <i class="fas fa-check"></i>
-                                                                    </p>
-                                                                </td>
-                                                                <td data-label="ProductOwner">Radowan</td>
-                                                                <td>
-                                                                    <div class="dropdown">
-                                                                        <a href="#" class="btn-transparent f-16 dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                            <button type="button" class="bg-transparent show" data-bs-toggle="tooltip" data-bs-placement="top" title="More">
-                                                                                <i class="fa-solid fa-ellipsis"></i>
-                                                                            </button>
-                                                                        </a>
-
-                                                                        <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton4">
-                                                                            <li><a class="dropdown-item " href="#">Edit Product</a></li>
-
-
-                                                                        </ul>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
+                                </form>
+                                <div class="row">
+                                    <div class="col-md-12 mb-3">
+                                        <label for="Addcontact" class="form-label">Add contact to the following Mailing List(s)  
+                                            </label>
+
+
+                                        <select class="form-select" id="Addcontact">
+                                            <option value="">Test</option>
+                                            <option value="">Test2</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12 mb-3">
+                                        <label for="Source" class="form-label">Contact Source 
+                                            </label>
+
+
+                                        <select class="form-select" id="Source">
+                                            <option value="">--slect--</option>
+                                            <option value="">Networking</option>
+                                            <option value="">Contact Us</option>
+                                            <option value="">Social Media</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12 mb-3">
+                                        <label for="Subscription" class="form-label">Subscription Type
+                                            </label>
+
+
+                                        <select class="form-select" id="Subscription">
+                                            <option value="">Marketing</option>
+                                            <option value="">Non-marketing</option>
+                                            <option value="">Unsubscribed</option>
+                                        </select>
+                                    </div>
+
                                 </div>
+
                             </div>
                         </div>
 
