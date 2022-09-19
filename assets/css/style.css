@@ -1053,6 +1053,7 @@ margin: 0 auto;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     border: 1px solid transparent;
+    margin: 0px 5px;
 }
 
 .contact-button .import-btn.contact-btn {
