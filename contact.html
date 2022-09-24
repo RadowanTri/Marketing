@@ -115,14 +115,6 @@
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item  no-arrow mx-1">
-                            <a class="nav-link" href="#">
-                                <button class="btn g-btn-2 text-white">All System</button>
-                            </a>
-
-                        </li>
-                        <!-- Nav Item - Notification -->
-
                         <li class="nav-item dropdown no-arrow mx-1 ">
                             <a class="nav-link dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-bell fa-fw "></i>
@@ -135,7 +127,7 @@
                                     Notification
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center " href="# ">
-                                    <div class="me-3 ">
+                                    <div class="me-3 sm-none">
                                         <div class="icon-circle bg-primary ">
                                             <i class="fas fa-file-alt text-white "></i>
                                         </div>
@@ -146,7 +138,7 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center " href="# ">
-                                    <div class="me-3 ">
+                                    <div class="me-3  sm-none">
                                         <div class="icon-circle bg-success ">
                                             <i class="fas fa-donate text-white "></i>
                                         </div>
@@ -157,7 +149,7 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center " href="# ">
-                                    <div class="me-3 ">
+                                    <div class="me-3 sm-none">
                                         <div class="icon-circle bg-warning ">
                                             <i class="fas fa-exclamation-triangle text-white "></i>
                                         </div>
@@ -297,8 +289,8 @@
                             </div>
                         </div>
                         <div class="content-body  mb-4">
-                            <div class="all-campaigns">
-                                <div class="all-campaigns-body shadow">
+                            <div class="all-campaigns contact-mail">
+                                <div class="all-campaigns-body shadow flex-d-column">
                                     <div class="filter-campaign">
                                         <p class="filter-h f-18 mb-3">Filter</p>
 
@@ -331,6 +323,38 @@
                                         </div>
                                         <div class="campaign-owner mb-2">
                                             <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Birthday">
+                                                <label class="form-check-label" for="Birthday">
+                                                    Birthday
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="campaign-owner mb-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="occasion">
+                                                <label class="form-check-label" for="occasion">
+                                                    Occasion
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="campaign-owner mb-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Organization">
+                                                <label class="form-check-label" for="Organization">
+                                                   Organization
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="campaign-owner mb-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Country">
+                                                <label class="form-check-label" for="Country">
+                                                   Country
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="campaign-owner mb-2">
+                                            <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="Associated">
                                                 <label class="form-check-label" for="Associated">
                                                    Associated Topics
@@ -358,17 +382,20 @@
                                                             </div>
                                                         </th>
                                                         <th>
-                                                            <label>First name</label>
+                                                            <label>
+                                                                
+                                                                Name
+                                                            </label>
                                                         </th>
                                                         <th>
-                                                            <label> Last name</label>
+                                                            <label>Position</label>
                                                         </th>
                                                         <th>
                                                             <label>Company name</label> </th>
                                                         <th>
-                                                            <label>Phone</label> </th>
-                                                        <th>
-                                                            <label>Mobile</label> </th>
+                                                            <label>Location</label> </th>
+                                                        <th><label>Phone</label> </th>
+                                                        <th><label>Action</label> </th>
                                                     </tr>
 
                                                 </thead>
@@ -381,14 +408,164 @@
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <label>Nixon</label>
+                                                            <a href="#" class="profile-item-main">
+                                                                <div class="avatar">
+                                                                    <img class="img-fluid avatar-userpic" src="assets/img/Jack.png" alt="name">
+                                                                </div>
+                                                                <span>
+                                                                
+                                                                    Shah Nesar Siddiqui
+                                                                </span>
+                                                            </a>
+
                                                         </td>
-                                                        <td> <label>Edinburgh</label> </td>
+                                                        <td>
+                                                            <label class="text-truncate " style="max-width: 180px; ">Senior Business Analyst | Product Manager | IT Project Management</label> </td>
                                                         <td> <label>Time Research & Innovation</label> </td>
-                                                        <td> <label> +224111</label> </td>
+                                                        <td> <label> Bangladesh</label> </td>
                                                         <td> <label>0120110425</label> </td>
+                                                        <td>
+                                                            <label>
+                                                                <div class="context">
+                                                                    <button  class="btn-transparent context-btn">
+                                                                        <i class="fa-solid fa-ellipsis"></i>
+                                                                    </button>
+                                                                    <div class="context-wraper" >
+                                                                        <ul class="context-list">
+                                                                            <li>
+                                                                                <a href="details-prof.html">
+                                                                                    <i class="fa-solid fa-circle-info"></i>Detials 
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#">
+                                                                                    <i class="fa-solid fa-eye"></i>Edit 
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#">
+                                                                                    <i class="fa-solid fa-trash"></i>Remove 
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </td>
+
 
                                                     </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="emailf">
+                                                                <label for="emailf">timeresarch@gmail.com</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="profile-item-main">
+                                                                <div class="avatar">
+                                                                    <img class="img-fluid avatar-userpic" src="assets/img/Jack.png" alt="name">
+                                                                </div>
+                                                                <span>
+                                                                
+                                                                    Shah Nesar Siddiqui
+                                                                </span>
+                                                            </a>
+
+                                                        </td>
+                                                        <td>
+                                                            <label class="text-truncate " style="max-width: 180px; ">Senior Business Analyst | Product Manager | IT Project Management</label> </td>
+                                                        <td> <label>Time Research & Innovation</label> </td>
+                                                        <td> <label> Bangladesh</label> </td>
+                                                        <td> <label>0120110425</label> </td>
+                                                        <td>
+                                                            <label>
+                                                                <div class="context">
+                                                                    <button  class="btn-transparent context-btn1">
+                                                                        <i class="fa-solid fa-ellipsis"></i>
+                                                                    </button>
+                                                                    <div class="context-wraper1" >
+                                                                        <ul class="context-list">
+                                                                            <li>
+                                                                                <a href="details-prof.html">
+                                                                                    <i class="fa-solid fa-circle-info"></i>Detials 
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#">
+                                                                                    <i class="fa-solid fa-eye"></i>Edit 
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#">
+                                                                                    <i class="fa-solid fa-trash"></i>Remove 
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="emailf">
+                                                                <label for="emailf">timeresarch@gmail.com</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="profile-item-main">
+                                                                <div class="avatar">
+                                                                    <img class="img-fluid avatar-userpic" src="assets/img/Jack.png" alt="name">
+                                                                </div>
+                                                                <span>
+                                                                
+                                                                    Shah Nesar Siddiqui
+                                                                </span>
+                                                            </a>
+
+                                                        </td>
+                                                        <td>
+                                                            <label class="text-truncate " style="max-width: 180px; ">Senior Business Analyst | Product Manager | IT Project Management</label> </td>
+                                                        <td> <label>Time Research & Innovation</label> </td>
+                                                        <td> <label> Bangladesh</label> </td>
+                                                        <td> <label>0120110425</label> </td>
+                                                        <td>
+                                                            <label>
+                                                                <div class="context">
+                                                                    <button  class="btn-transparent context-btn2">
+                                                                        <i class="fa-solid fa-ellipsis"></i>
+                                                                    </button>
+                                                                    <div class="context-wraper2" >
+                                                                        <ul class="context-list">
+                                                                            <li>
+                                                                                <a href="details-prof.html">
+                                                                                    <i class="fa-solid fa-circle-info"></i>Detials 
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#">
+                                                                                    <i class="fa-solid fa-eye"></i>Edit 
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#">
+                                                                                    <i class="fa-solid fa-trash"></i>Remove 
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </td>
+
+
+                                                    </tr>
+
                                                 </tbody>
                                             </table>
                                         </div>
@@ -405,11 +582,12 @@
         <!-- End of Sidebar -->
     </div>
 
+
     <!--=== All Plugin ===-->
     <!--============= Jquery-3.6.0 =============-->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/fixedcolumns/4.1.0/js/dataTables.fixedColumns.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js "></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js "></script>
+    <script src="https://cdn.datatables.net/fixedcolumns/4.1.0/js/dataTables.fixedColumns.min.js "></script>
     <!--=== Popper  v2.9.2 js ===-->
     <script src="assets/js/popper.min.js "></script>
     <!--=== Bootstrap4 js ===-->
@@ -419,7 +597,7 @@
     <script>
         $(document).ready(function() {
             var table = $('#example').removeAttr('width').DataTable({
-                scrollY: "300px",
+                scrollY: "300px ",
                 scrollX: true,
                 scrollCollapse: true,
                 paging: false,
@@ -430,7 +608,20 @@
                 fixedColumns: true
             });
         });
+        $(document).ready(function() {
+            $(".context-btn").click(function() {
+                $(".context-wraper").toggle();
+            });
+            $(".context-btn1").click(function() {
+                $(".context-wraper1").toggle();
+            });
+            $(".context-btn2").click(function() {
+                $(".context-wraper2").toggle();
+            });
+        });
     </script>
+
+
 </body>
 
 </html>

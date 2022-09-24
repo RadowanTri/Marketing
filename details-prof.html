@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
     <!--=== Bootstrap 4 ===-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/4.1.0/css/fixedColumns.dataTables.min.css">
     <!--=== Main Css ===-->
     <link rel="stylesheet" href="assets/css/default.css">
     <!--=== Style & Responsive  Css ===-->
@@ -40,11 +42,10 @@
                     </div>
                 </a>
             </div>
-
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item ">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
@@ -52,15 +53,15 @@
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-toggle="collapse" href="#Campaign" role="button" aria-expanded="false" aria-controls="Campaign">
                     <i class="fa-solid fa-microphone"></i>
                     <span>Campaign</span>
                 </a>
-                <div id="Campaign" class="collapse show">
+                <div id="Campaign" class="collapse">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="campaign1.html">Email Campaign</a>
-                        <a class="collapse-item active" href="smscampaign.html">Sms Campaign</a>
+                        <a class="collapse-item active" href="campaign1.html">Email Campaign</a>
+                        <a class="collapse-item" href="smscampaign.html">Sms Campaign</a>
                     </div>
                 </div>
             </li>
@@ -90,7 +91,7 @@
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="contact.html">
                     <i class="fa-solid fa-address-book"></i>
                     <span>Contact</span>
@@ -114,8 +115,6 @@
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ms-auto">
-
-
                         <li class="nav-item dropdown no-arrow mx-1 ">
                             <a class="nav-link dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-bell fa-fw "></i>
@@ -247,172 +246,88 @@
                 <!-- Start of Container -->
                 <div class="container-fluid">
                     <div class="container-wrappero">
+
                         <div class="content-page-header mb-4">
                             <div class="breadcrumb-header">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb content_shadow">
-                                        <li class="breadcrumb-item"><a href="#">Campaign</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">SMS Campaign </li>
+                                        <li class="breadcrumb-item"><a href="contact.html">Contact</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Radowan Profile</li>
                                     </ol>
                                 </nav>
                             </div>
                         </div>
                         <div class="content-body  mb-4">
-                            <div class="all-campaigns">
-                                <div class="all-cam-top">
-                                    <div class="dropdown">
-                                        <button class="btn-transparent f-18 p1-color dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            All Campaign
-                                        </button>
-                                        <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item active" href="#">All Campaign</a></li>
-                                            <li><a class="dropdown-item" href="#">Sent Campaign</a></li>
-                                            <li><a class="dropdown-item" href="#">Delete Campaign</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="create-campaign">
-                                        <a href="createsmscampaign.html" class="create-c-btn">Create Campaign</a>
-                                    </div>
-                                </div>
-                                <div class="all-campaigns-body shadow">
-                                    <div class="filter-campaign">
-                                        <p class="filter-h f-18 mb-3">Filter</p>
-
-                                        <div class="campaign-owner mb-4">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                                <label class="form-check-label mb-2" for="flexCheckChecked">
-                                                    Campaign Owner
-                                                </label>
-                                            </div>
-                                            <div class="campaign-owner-box">
-                                                <p>Me</p>
-                                            </div>
-                                        </div>
-                                        <div class="campaign-owner mb-2">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    SMS Gateway
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="campaign-owner mb-2">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                                                <label class="form-check-label" for="flexCheckDefault2">
-                                                    SMS Status
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="select-campaign ">
-                                        <div class="select-campaign-t">
-                                            <div class="select-all">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                                                    <label class="form-check-label f-15" for="flexCheckDefault3">
-                                                        Select All
-                                                    </label>
+                            <div class="all-campaigns details-porfile">
+                                <div class="profile-body">
+                                    <div class="card">
+                                        <div>
+                                            <div class="profile-info">
+                                                <div class="profile-info-head">
+                                                    <div>
+                                                        <div class="profile-info-avatar">
+                                                            <div title="Radowan" class="avatar">
+                                                                <img class="img-fluid avatar-userpic" src="https://media-exp1.licdn.com/dms/image/C5603AQEVVcfXDNMWWg/profile-displayphoto-shrink_200_200/0/1639983257587?e=1669248000&amp;v=beta&amp;t=pFjqy2L0LUfBibi2BSpBdqOXErRq75woSRCJbr_SzPg" alt="Radowan">
+                                                            </div>
+                                                            <a href="https://www.linkedin.com/in/ACoAAB5tzKkBAiFrgGCmWiR6veaVuZhGZtNQ8J8/" target="_blank" rel="noreferrer" class="profile-info-li-logo"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="profile-info-name">Radowan Rahman</div>
+                                                        <div class="profile-info-occupation">Fromtend Developer| Product Manager | IT Project Management</div>
+                                                        <div class="profile-info-connections">500+ connections</div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="sorted-by d-flex align-items-center gap-3">
-                                                <button class="search-icon">
-                                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                                </button>
-                                                <div class="dropdown">
-                                                    <button class="btn-transparent f-15 dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        Sort by : Recently Created 
-                                                        <i class="fas fa-chevron-down me-1"></i>
-                                                    </button>
-                                                    <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton2">
-                                                        <li><a class="dropdown-item active" href="#">Recently Created</a></li>
-                                                        <li><a class="dropdown-item" href="#">Creation Date</a></li>
-                                                        <li><a class="dropdown-item" href="#"> Last Modified</a></li>
-                                                        <li><a class="dropdown-item" href="#">  Ascending Order</a></li>
-                                                        <li><a class="dropdown-item" href="#">  Descending Order</a></li>
-                                                    </ul>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="select-campaign-b">
-                                            <div class="card">
-                                                <ul class="list-group">
-                                                    <li class="list-group-item">
-                                                        <div class="list-group-item-wrapper d-flex gap-3">
-                                                            <div class="select-campaign-reviewed">
-                                                                <h4 class="cam-title-name">Timerni</h4>
-                                                                <p><b class="sts"></b> To Be Reviewed | Created on Jul 25, 2022 04:32 PM
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="dropdown">
-                                                            <a href="#" class="btn-transparent f-16 dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <button type="button" class="bg-transparent" data-bs-toggle="tooltip" data-bs-placement="top" title="More">
-                                                                    <i class="fa-solid fa-ellipsis"></i>
-                                                                </button>
-                                                            </a>
-
-                                                            <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton3">
-                                                                <li><a class="dropdown-item " href="#">Edit subject and sender details</a></li>
-                                                                <li><a class="dropdown-item" href="#">Add Content</a></li>
-                                                                <li><a class="dropdown-item" href="#"> Delete campaign</a></li>
-
-                                                            </ul>
-                                                        </div>
-
-
+                                                <hr class="hr">
+                                                <ul class="profile-info-list">
+                                                    <li class="profile-info-item">
+                                                        <div class="profile-info-item-caption">E-mail</div><a href="mailto:tri007@gmail.com">tri007@gmail.com</a></li>
+                                                    <li class="profile-info-item">
+                                                        <div class="profile-info-item-caption">Company</div>
+                                                        <div>TRI Limited.</div>
                                                     </li>
-                                                    <li class="list-group-item">
-                                                        <div class="list-group-item-wrapper d-flex gap-3">
-                                                            <div class="select-campaign-reviewed">
-                                                                <h4 class="cam-title-name">Timerni</h4>
-                                                                <p><b class="sts"></b> To Be Reviewed | Created on Jul 25, 2022 04:32 PM
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="dropdown">
-                                                            <a href="#" class="btn-transparent f-16 dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <button type="button" class="bg-transparent show" data-bs-toggle="tooltip" data-bs-placement="top" title="More">
-                                                                    <i class="fa-solid fa-ellipsis"></i>
-                                                                </button>
-                                                            </a>
-
-                                                            <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton4">
-                                                                <li><a class="dropdown-item " href="#">Edit subject and sender details</a></li>
-                                                                <li><a class="dropdown-item" href="#">Add Content</a></li>
-                                                                <li><a class="dropdown-item" href="#"> Delete campaign</a></li>
-
-                                                            </ul>
-                                                        </div>
+                                                    <li class="profile-info-item">
+                                                        <div class="profile-info-item-caption">Position</div>
+                                                        <div>Fromtend Developert</div>
                                                     </li>
-                                                    <li class="list-group-item">
-                                                        <div class="list-group-item-wrapper d-flex gap-3">
-                                                            <div class="select-campaign-reviewed">
-                                                                <h4 class="cam-title-name">Timerni</h4>
-                                                                <p><b class="sts"></b> To Be Reviewed | Created on Jul 25, 2022 04:32 PM
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="dropdown">
-                                                            <a href="#" class="btn-transparent f-16 dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <button type="button" class="bg-transparent" data-bs-toggle="tooltip" data-bs-placement="top" title="More">
-                                                                    <i class="fa-solid fa-ellipsis"></i>
-                                                                </button>
-                                                            </a>
-
-                                                            <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton5">
-                                                                <li><a class="dropdown-item " href="#">Edit subject and sender details</a></li>
-                                                                <li><a class="dropdown-item" href="#">Add Content</a></li>
-                                                                <li><a class="dropdown-item" href="#"> Delete campaign</a></li>
-
-                                                            </ul>
-                                                        </div>
-
-
+                                                    <li class="profile-info-item">
+                                                        <div class="profile-info-item-caption">Location</div>
+                                                        <div>Dhaka</div>
                                                     </li>
+                                                    <!---->
+                                                    <li class="profile-info-item">
+                                                        <div class="profile-info-item-caption">Campaigns:</div><span class="profile-in-campaign-link"><a href="#" >Connection</a><svg width="14" height="14" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" data-original-title="null" class=" has-tooltip"><circle cx="48" cy="48" r="45" stroke="#0f0462;" stroke-width="6" fill="none"></circle><polygon points="71.3613281 48 36 73 36 23" stroke-linejoin="round" stroke-width="6" stroke="#0f0462" fill="none"></polygon></svg></span></li>
                                                 </ul>
+                                                <hr class="hr"><button class="btn-base"> Edit </button></div>
+                                            <!---->
+                                        </div>
+
+                                    </div>
+                                    <div>
+                                        <div class="card profile-activity">
+                                            <ul class="activity-timeline">
+                                                <li class="activity-timeline-day">
+                                                    <h4 class="activity-timeline-day-date">Sep 20, 2022</h4>
+                                                    <ul class="activity-timeline-day-actions">
+                                                        <li class="activity-timeline-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 26"><defs><clipPath id="a"><path fill="#fff" d="M7.5 25.5v-15h15v15zM15 24a6 6 0 100-12 6 6 0 000 12z"></path></clipPath><clipPath id="b"><path fill="#fff" d="M8.8 24.2V11.8h12.4v12.4zm5-4.2a.5.5 0 00.7 0l3.5-3.3a.5.5 0 10-.7-.7l-3.1 3-1.5-1.6a.5.5 0 10-.7.7l1.8 1.9zm1.2-7a5 5 0 015 5 5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5zm0 11a6 6 0 100-12 6 6 0 000 12z"></path></clipPath></defs><path fill="#0f0462" d="M9.3 1.5c2 0 3.4 1.5 3.4 3.4 0 2.1-1.5 3.8-3.4 3.8C7.5 8.7 6 7 6 5c0-2 1.5-3.4 3.4-3.4zM4.5 4.9c0 3 2.1 5.3 4.8 5.3 2.7 0 4.9-2.4 4.9-5.3C14.2 2.1 12 0 9.3 0S4.5 2.1 4.5 5zm4.8 7.8c5 0 7.6 2 7.9 5.8H1.5c.3-3.8 3-5.8 7.8-5.8zM18 20a.7.7 0 00.7-.7c0-5.2-3.3-8-9.3-8-6 0-9.3 2.8-9.3 8 0 .4.3.7.7.7z"></path><path fill="#fff" d="M9 18a6 6 0 1112 0 6 6 0 01-12 0z"></path><path fill="none" stroke="#fff" stroke-miterlimit="20" stroke-width="3" d="M9 18a6 6 0 1112 0 6 6 0 01-12 0z" clip-path="url(&quot;#a&quot;)"></path><g><path fill="#0f0462" d="M13.8 20a.5.5 0 00.7 0l3.5-3.3a.5.5 0 10-.7-.7l-3.1 3-1.5-1.6a.5.5 0 10-.7.7l1.8 1.9zm1.2-7a5 5 0 015 5 5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5zm0 11a6 6 0 100-12 6 6 0 000 12z"></path><path fill="none" stroke="#0f0462" stroke-miterlimit="20" stroke-width=".4" d="M13.8 20a.5.5 0 00.7 0l3.5-3.3a.5.5 0 10-.7-.7l-3.1 3-1.5-1.6a.5.5 0 10-.7.7l1.8 1.9zm1.2-7a5 5 0 015 5 5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5zm0 11a6 6 0 100-12 6 6 0 000 12z" clip-path="url(&quot;#b&quot;)"></path></g></svg>
+                                                            <div class="activity-timeline-item-action"> Connection request was accepted by <span>the profile</span> <span> in <a href="/campaigns/163800" class=""> Connection </a> campaign </span>
+                                                                <!---->
+                                                            </div><time class="activity-timeline-item-time"> 21:35 </time></li>
+                                                        <li class="activity-timeline-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 26"><path fill="#0f0462" d="M9.3 1.5c2 0 3.4 1.5 3.4 3.4 0 2.1-1.5 3.8-3.4 3.8C7.5 8.7 6 7 6 5c0-2 1.5-3.4 3.4-3.4zM4.5 4.9c0 3 2.1 5.3 4.8 5.3 2.7 0 4.9-2.4 4.9-5.3C14.2 2.1 12 0 9.3 0S4.5 2.1 4.5 5zm4.8 7.8c5 0 7.6 2 7.9 5.8H1.5c.3-3.8 3-5.8 7.8-5.8zM18 20a.7.7 0 00.7-.7c0-5.2-3.3-8-9.3-8-6 0-9.3 2.8-9.3 8 0 .4.3.7.7.7z"></path></svg>
+                                                            <div class="activity-timeline-item-action"> Connection request was sent to <span>the profile</span> <span> in <a href="/campaigns/163800" class=""> Connection </a> campaign </span>
+                                                                <!---->
+                                                            </div><time class="activity-timeline-item-time"> 14:58 </time></li>
+                                                    </ul>
+                                                </li>
+                                                <!---->
+                                            </ul>
+                                        </div>
+                                        <div class="card">
+                                            <div class="profile-notes">
+                                                <div class="head">
+                                                    <div class="profile-notes-title"> Notes </div><button class="btn-base btn-auto-w"> Add note </button></div>
+                                                <p class="profile-notes-ph small tac"><span>The user does not have any notes. </span><br><button class="link"> Add one </button></p>
+                                                <!---->
                                             </div>
                                         </div>
                                     </div>
@@ -428,15 +343,40 @@
         <!-- End of Sidebar -->
     </div>
 
+
     <!--=== All Plugin ===-->
     <!--============= Jquery-3.6.0 =============-->
     <script src="assets/js/jquery-3.6.0.min.js "></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js "></script>
+    <script src="https://cdn.datatables.net/fixedcolumns/4.1.0/js/dataTables.fixedColumns.min.js "></script>
     <!--=== Popper  v2.9.2 js ===-->
     <script src="assets/js/popper.min.js "></script>
     <!--=== Bootstrap4 js ===-->
     <script src="assets/js/bootstrap.min.js "></script>
     <!--=== Main js ===-->
     <script src="assets/js/main.js "></script>
+    <script>
+        $(document).ready(function() {
+            var table = $('#example').removeAttr('width').DataTable({
+                scrollY: "300px ",
+                scrollX: true,
+                scrollCollapse: true,
+                paging: false,
+                columnDefs: [{
+                    width: 200,
+                    targets: 0
+                }],
+                fixedColumns: true
+            });
+        });
+        $(document).ready(function() {
+            $(".context-btn").click(function() {
+                $(".context-wraper").toggle();
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
