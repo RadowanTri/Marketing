@@ -1606,7 +1606,7 @@ Last change:    24/08/21 [fixed Float bug, vf]
             .sidebar .nav-item .collapse .collapse-inner .collapse-item,
             .sidebar .nav-item .collapsing .collapse-inner .collapse-item {
                 padding: 0.5rem 1rem;
-                margin: 0 0.5rem;
+                margin: .3rem 0.5rem;
                 display: block;
                 color: #3a3b45;
                 text-decoration: none;
