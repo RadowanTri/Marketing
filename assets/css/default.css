@@ -1208,13 +1208,13 @@ Last change:    24/08/21 [fixed Float bug, vf]
             
             .grid-2 {
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
                 gap: 10px;
             }
             
             .grid-3 {
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr);
                 gap: 10px;
             }
             
@@ -2271,52 +2271,6 @@ Last change:    24/08/21 [fixed Float bug, vf]
                 padding: 3px 10px;
             }
             
-            .profile-body {
-                display: grid;
-                grid-template-columns: 2fr 5fr;
-                gap: 10px;
-            }
-            
-            .profile-info-avatar {
-                position: relative;
-            }
-            
-            .profile-info-head {
-                display: grid;
-                grid-template-columns: 60px auto;
-                gap: 15px;
-            }
-            
-            .profile-info-name {
-                font-weight: 500;
-                font-size: 16px;
-                margin-bottom: 3px;
-                color: #000;
-            }
-            
-            .profile-info-occupation {
-                color: rgb(48, 48, 76, .5);
-                margin-bottom: 8px;
-            }
-            
-            .details-porfile .card {
-                padding: .75rem;
-            }
-            
-            .profile-info-item-caption {
-                color: rgb(48, 48, 76, .5);
-                margin-bottom: 5px;
-                font-size: 13.5px;
-            }
-            
-            .profile-info-item a {
-                color: #0f0462;
-            }
-            
-            .profile-info-item {
-                margin-bottom: 10px;
-            }
-            
             .btn-base {
                 height: 40px;
                 width: 100%;
@@ -2471,4 +2425,24 @@ Last change:    24/08/21 [fixed Float bug, vf]
             .table-responsive,
             .dataTables_scrollBody {
                 min-height: 150px !important;
+            }
+            /* 26/10/22 */
+            
+            .details-company .profile-body {
+                display: grid;
+                grid-template-columns: 3fr 5fr;
+                gap: 10px;
+            }
+            
+            .gray {
+                color: #a5a5a5;
+            }
+            
+            .f-500 {
+                font-weight: 500;
+            }
+            
+            .f-14 {
+                font-size: 14px;
+                color: #242323;
             }
