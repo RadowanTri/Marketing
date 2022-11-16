@@ -1479,3 +1479,22 @@ margin: 0 auto;
     padding-bottom: 15px;
     margin-bottom: 20px;
 }
+
+.email-modal-dialog.modal-dialog {
+    max-width: 960px;
+}
+
+.email-modal-dialog th {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #242323;
+}
+
+.email-modal-dialog .lead-btn {
+    min-width: 180px;
+}
+
+.chart-f svg {
+    max-width: 100%;
+}
