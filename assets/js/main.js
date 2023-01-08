@@ -28,7 +28,14 @@ $(document).ready(function($) {
         };
     });
 
-
+    $('#showId').click(function() {
+        // $('#myAccordionOne').show('slow', function() {
+           
+        // });
+        $('#myAccordionOne').show(function() {
+            document.getElementById("parentDiv").style.display = "none";
+        });
+    });
 
     // tooltips
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
@@ -41,9 +48,11 @@ $(document).ready(function($) {
     var myModal = document.getElementById('myModal')
     var myInput = document.getElementById('myInput')
 
-    myModal.addEventListener('shown.bs.modal', function() {
+    myModal.addEventListener('shown.bs.modal', function () {
         myInput.focus()
-    })
+    });
+  
+  
 
 
 }(jQuery));

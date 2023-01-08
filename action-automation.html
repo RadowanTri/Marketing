@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
     <!--=== Bootstrap 4 ===-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/4.1.0/css/fixedColumns.dataTables.min.css">
     <!--=== Main Css ===-->
     <link rel="stylesheet" href="assets/css/default.css">
     <!--=== Style & Responsive  Css ===-->
@@ -40,11 +42,10 @@
                     </div>
                 </a>
             </div>
-
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item ">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
@@ -57,22 +58,21 @@
                     <i class="fa-solid fa-microphone"></i>
                     <span>Campaign</span>
                 </a>
-                <div id="Campaign" class="collapse show">
+                <div id="Campaign" class="collapse">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item " href="campaign2.html">Email Campaign</a>
-                        <a class="collapse-item active" href="smscampaign.html">Sms Campaign</a>
+                        <a class="collapse-item active" href="campaign1.html">Email Campaign</a>
+                        <a class="collapse-item" href="smscampaign.html">Sms Campaign</a>
                     </div>
                 </div>
             </li>
             <!-- Divider -->
-
+            <hr class="sidebar-divider">
             <li class="nav-item active">
                 <a class="nav-link" href="automation.html">
                     <i class="fa-solid fa-chart-line"></i>
                     <span>Automation</span>
                 </a>
             </li>
-            <!-- Divider -->
             <hr class="sidebar-divider">
             <li class="nav-item">
                 <a class="nav-link" href="anlytic.html">
@@ -81,13 +81,13 @@
                 </a>
             </li>
             <!-- Divider -->
-            <li class="nav-item ">
-                <a class="nav-link" href="addcontact.html">
-                    <i class="fa-solid fa-chart-line"></i>
-                    <span>Contact</span>
+            <hr class="sidebar-divider">
+            <li class="nav-item">
+                <a class="nav-link" href="customer.html">
+                    <i class="fa-solid fa-person"></i>
+                    <span>Customer</span>
                 </a>
             </li>
-            <!-- Divider -->
             <!-- Divider -->
             <hr class="sidebar-divider">
             <li class="nav-item">
@@ -96,6 +96,8 @@
                     <span>Product</span>
                 </a>
             </li>
+            <!-- Divider -->
+
             <hr class="sidebar-divider">
             <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-toggle="collapse" href="#Contact" role="button" aria-expanded="false" aria-controls="Contact">
@@ -104,7 +106,7 @@
                 </a>
                 <div id="Contact" class="collapse">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item active" href="contactcompany.html">Company</a>
+                        <a class="collapse-item" href="contactcompany.html">Company</a>
                         <a class="collapse-item" href="person.html">Person</a>
                     </div>
                 </div>
@@ -126,8 +128,6 @@
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ms-auto">
-
-
                         <li class="nav-item dropdown no-arrow mx-1 ">
                             <a class="nav-link dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-bell fa-fw "></i>
@@ -259,52 +259,131 @@
                 <!-- Start of Container -->
                 <div class="container-fluid">
                     <div class="container-wrappero">
+
                         <div class="content-page-header mb-4">
-                            <div class="breadcrumb-header">
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb content_shadow">
-                                        <li class="breadcrumb-item"><a href="#">Campaign</a></li>
-                                        <li class="breadcrumb-item"><a href="smscampaign.html">SMS Campaign</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Create SMS Campaign </li>
-                                    </ol>
-                                </nav>
+                            <div class="card">
+                                <div class="card-body d-flex justify-content-between align-items-center gap-3 ">
+                                    <div class="breadcrumb-header">
+                                        <nav aria-label="breadcrumb">
+                                            <ol class="breadcrumb mb-0">
+                                                <li class="breadcrumb-item"><a href="automation.html">Automation</a></li>
+                                                <li class="breadcrumb-item active" aria-current="page">Customer Journey </li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                          
+                                </div>
+                                <!-- end card body-->
                             </div>
                         </div>
-                        <div class="content-body  mb-4">
-                            <div class="create-sms-camp bg-white">
-                                <div class="text-center mb-3">
-                                    <h5>Create SMS Campaign
-                                    </h5>
-                                    <p class="py-2">Craft a short message, provide links and codes. Achieve maximum engagement with the right content. Optimize your marketing endeavour with SMS campaigns.
-                                    </p>
-                                </div>
-                                <form action="">
-                                    <div class="row  col-md-8  offset-md-2 justify-content-center align-items-center">
-                                        <div class="mb-3">
-                                            <label for="inputEmail4" class="form-label">Campaign Name *</label>
-                                            <input type="Name" class="form-control" id="inputEmail4">
-                                        </div>
 
-                                        <div class="mb-3">
-                                            <label for="inputEmail5" class="form-label">Marketing Project *</label>
-                                            <select class="form-select" id="inputEmail5" aria-describedby="Project">
-                                                <option selected="">Marketing Marketing Project</option>
-                                                <option value="1">Brand Topic</option>
-                                                <option value="2">Marketing</option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="inputEmail4" class="form-label">Expected Launch Date *
-                                            </label>
-                                            <input type="date" class="form-control">
-                                        </div>
-                                        <div class="save-exit text-center mt-3">
-                                            <a href="smsconfigure.html" class="btn-config">Save &amp; Exit</a>
+
+                        <div class="content-body  mb-4">
+                            <div class="journey-page-details ">
+                                <div class="card mb-4">
+                                    <div class="card-body  ">
+
+                                        <h3 class="s-heading mb-3">
+                                           Action
+                                        </h3>
+                                        <div class="action-setup">
+                                            <div class="col-md-3">
+
+                                                <div class="single-compaign-wq ">
+                                                    <a href="#" class="text-center flex-column justify-content-center align-item-center gap-1">
+                                                        <div class="setup-icon">
+                                                            <i class="fa-solid fa-envelope"></i>
+                                                        </div>
+                                                        <div class="set-content">
+                                                            <h3 class="s-heading">
+                                                                Email
+                                                            </h3>
+                                                           
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
 
                                     </div>
-                                </form>
+                                    <!-- end card body-->
 
+                                </div>
+                                <div class="automation-map  mb-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            
+                                            <div class="row justify-content-center">
+                                                <h3 class="s-heading text-center mb-3">
+                                                    Automation Map
+                                                </h3>
+                                                <div class="col-md-4">
+                                                    <ul class="map-timeline-day-actions">
+                                                        <li class="map-timeline-item">
+                                                            <div class="draf-dd active" >
+                                                                <div class="d-flex gap-2 flex-1">
+                                                                    <div class="setup-icon">
+                                                                        <i class="fa-solid fa-calendar-days"></i>
+                                                                    </div>
+                                                                    <div class="set-content">
+                                                                        <h3 class="s-heading">
+                                                                            Date &amp; Time
+                                                                        </h3>
+                                                                        <div class="fs-card-title">
+                                                                            <p class="f-14">Select a date based property</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="map-timeline-item">
+                                                            <div class="draf-dd" >
+                                                                    <div class="d-flex gap-2 flex-1">
+
+                                                                        <div class="setup-icon">
+                                                                            <i class="fa-solid fa-envelope"></i>
+                                                                        </div>
+                                                                        <div class="set-content">
+                                                                            <h3 class="s-heading">
+                                                                                Email
+                                                                            </h3>
+                                                                            <div class="fs-card-title">
+                                                                                <button class="draft-btn red-bg">Draft</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="dropdown">
+                                                                        <a  class="btn-transparent f-16 dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                            <button type="button" class="bg-transparent" data-bs-toggle="tooltip" data-bs-placement="top" title="More">
+                                                                                <i class="fa-solid fa-ellipsis"></i>
+                                                                            </button>
+                                                                        </a>
+            
+                                                                        <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton3">
+                                                                          
+                                                                            <li><a class="dropdown-item" href="#">Add Content</a></li>
+                                                                            <li><a class="dropdown-item" href="#"> Delete campaign</a></li>
+            
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                        </li>
+                                                        <li class="map-timeline-item">
+                                                            <div class="draf-dd exit">
+                                                                Exit
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+
+                                                   
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                     
+                                        <!-- end card body-->
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -315,16 +394,93 @@
         </div>
         <!-- End of Sidebar -->
     </div>
+    <!-- MODAL ADD -->
+    <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="s-heading flex-grow-1 text-center" id="exampleModalLabel">Create Automation</h5>
+                    <button type="button" class="btn-transparent" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.4667 4.5333C18.2667 -0.666699 9.73333 -0.666699 4.53333 4.5333C-0.666669 9.7333 -0.666669 18.2666 4.53333 23.4666C9.73333 28.6666 18.1333 28.6666 23.3333 23.4666C28.5333 18.2666 28.6667 9.7333 23.4667 4.5333ZM17.7333 19.6L14 15.8666L10.2667 19.6L8.4 17.7333L12.1333 14L8.4 10.2666L10.2667 8.39997L14 12.1333L17.7333 8.39997L19.6 10.2666L15.8667 14L19.6 17.7333L17.7333 19.6Z" fill="#312783"/>
+                            </svg>
+                            
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row mb-2">
+                            <div class="col-md-3">
+                                <label for="Name" class="col-form-label"> Name <span class="red">*</span></label>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="Name" id="Name" class="form-control" aria-describedby="passwordHelpInline">
+                            </div>
+
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-3">
+                                <label for="Category" class="col-form-label">  Category <span class="red">*</span></label>
+                            </div>
+                            <div class="col-md-9">
+                                <select class="form-select" id="Category">
+                                        <optgroup label="Select Lead List" class="my-2">
+                                            <option>Ecommerce</option>
+                                            <option>Custom Software Development</option>
+                                            <option>App Development</option>
+                                            <option>UI/UX</option>
+                                        </optgroup>
+                                        <optgroup  label="Without Lead List" class="my-2">
+                                            <option>Without Lead </option>
+                                        </optgroup>
+                                        <optgroup label="Others" class="my-2">
+                                            <option>All </option>
+                                        </optgroup>
+                                </select>
+                                <div class="mt-2">
+
+                                    <button class="action-btn cancel-btn">Cancel</button>
+                                    <button class="action-btn submit-btn">Submit</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <!--=== All Plugin ===-->
     <!--============= Jquery-3.6.0 =============-->
-    <script type=" text/javascript " src="assets/js/jquery-3.6.0.min.js "></script>
+    <script src="assets/js/jquery-3.6.0.min.js "></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js "></script>
+    <script src="https://cdn.datatables.net/fixedcolumns/4.1.0/js/dataTables.fixedColumns.min.js "></script>
     <!--=== Popper  v2.9.2 js ===-->
     <script src="assets/js/popper.min.js "></script>
     <!--=== Bootstrap4 js ===-->
     <script src="assets/js/bootstrap.min.js "></script>
     <!--=== Main js ===-->
     <script src="assets/js/main.js "></script>
+    <script>
+        $(document).ready(function() {
+            var table = $('#example').removeAttr('width').DataTable({
+                scrollY: "300px ",
+                scrollX: true,
+                scrollCollapse: true,
+                paging: false,
+                columnDefs: [{
+                    width: 200,
+                    targets: 0
+                }],
+                fixedColumns: true
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>

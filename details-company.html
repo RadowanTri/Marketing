@@ -66,6 +66,14 @@
                 </div>
             </li>
             <!-- Divider -->
+
+            <li class="nav-item active">
+                <a class="nav-link" href="automation.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Automation</span>
+                </a>
+            </li>
+            <!-- Divider -->
             <hr class="sidebar-divider">
             <li class="nav-item">
                 <a class="nav-link" href="anlytic.html">
@@ -74,19 +82,13 @@
                 </a>
             </li>
             <!-- Divider -->
-            <hr class="sidebar-divider">
-            <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-toggle="collapse" href="#Contact" role="button" aria-expanded="false" aria-controls="Contact">
-                    <i class="fa-solid fa-microphone"></i>
+            <li class="nav-item ">
+                <a class="nav-link" href="addcontact.html">
+                    <i class="fa-solid fa-chart-line"></i>
                     <span>Contact</span>
                 </a>
-                <div id="Campaign" class="collapse">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item active" href="contactcompany.html">Company</a>
-                        <a class="collapse-item" href="details-prof.html">Person</a>
-                    </div>
-                </div>
             </li>
+            <!-- Divider -->
             <!-- Divider -->
             <hr class="sidebar-divider">
             <li class="nav-item">
@@ -335,26 +337,32 @@
                                                             <ul class=" dropdown-submenu position-relative">
                                                                 <li class="dropdown-item">
                                                                     <button class="add-new" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">
-                                                                        <img src="assets/img/plus.svg" alt="">
-                                                                            Add New
-                                                                           
+                                                                        <img src="assets/img/plus1.svg" alt="">
+                                                                        Add New
                                                                     </button>
                                                                 </li>
 
                                                                 <li>
-                                                                    <a class="dropdown-item" href="#">E-commarce</a>
-
+                                                                    <div class="dropdown-item terms">
+                                                                        <input type="checkbox" id="commarce">
+                                                                        <label for="commarce">E-commarce</label>
+                                                                    </div>
+                                                                    <!-- <a class="dropdown-item" href="#">E-commarce</a> -->
                                                                 </li>
-
                                                                 <li>
-                                                                    <a class="dropdown-item" href="#">Custom Software Development</a>
+                                                                    <div class="dropdown-item terms">
+                                                                        <input type="checkbox" id="Custom">
+                                                                        <label for="Custom">Custom Software Development</label>
+                                                                    </div>
                                                                 </li>
                                                                 <li>
-                                                                    <a class="dropdown-item" href="#">UX/UI</a>
+                                                                    <div class=" dropdown-item terms">
+                                                                        <input type="checkbox" id="UX">
+                                                                        <label for="UX">UX/UI</label>
+                                                                    </div>
                                                                 </li>
                                                                 <li>
                                                                     <div class="dropdown-item text-start">
-
                                                                         <button class="action-btn cancel-btn">Cancel</button>
                                                                         <button class="action-btn submit-btn">Submit</button>
                                                                     </div>
@@ -381,7 +389,7 @@
                                                             <form action="">
                                                                 <div class="row  gap-3">
                                                                     <div class="col-auto">
-                                                                        <label for="inputName" class="col-form-label">Lead Name* <span class="red">*</span></label>
+                                                                        <label for="inputName" class="col-form-label">Lead Name <span class="red">*</span></label>
                                                                     </div>
                                                                     <div class="col">
                                                                         <input type="text" id="inputName" class="form-control" aria-describedby="NameHelpInline">
@@ -429,7 +437,8 @@
                                                 </div>
                                                 <div class="esm-info">
                                                     <h6 class="f-500 blue-color">10</h6>
-                                                    <button type="button" class="btn-transparent f-14" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    <p class="f-14 ">Sent Emails</p>
+                                                    <button type="button" class="btn-transparent f-14 f-500 blue-color" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                         Sent Emails
                                                     </button>
                                                 </div>
@@ -439,12 +448,13 @@
                                             <div class="open-time d-flex gap-1">
                                                 <label class="f-14" for="meeting-time">Opened:</label>
 
-                                                <input class="f-14 f-500 blue-color" type="datetime-local " id="meeting-time " name="meeting-time " value="2018-06-12T19:30 " min="2018-06-07T00:00 " max="2018-06-14T00:00 " </div>
+                                                <input class="f-14 f-500 blue-color" type="datetime-local " id="meeting-time " name="meeting-time " value="2018-06-12T19:30 " min="2018-06-07T00:00 " max="2018-06-14T00:00 " >
                                             </div>
                                             <div class="open-time d-flex gap-1">
                                                 <label class="f-14" for="meeting-time">Last Clicked:</label>
+                                                <input type="text">
 
-                                                <input class="f-14 f-500 blue-color" type="datetime-local " id="meeting-time " name="meeting-time " value="2018-06-12T19:30 " min="2018-06-07T00:00 " max="2018-06-14T00:00 " </div>
+                                                <input class="f-14 f-500 blue-color" type="datetime-local " id="meeting-time " name="meeting-time " value="2018-06-12T19:30 " min="2018-06-07T00:00 " max="2018-06-14T00:00 " >
                                             </div>
                                         </div>
                                         <div class="mt-20 text-start grid-2">
@@ -549,17 +559,20 @@
                                                 Employee List of Time Research & Innovation
                                             </h3>
                                             <di class="d-flex  gap-2">
-                                                <div class="dropdown">
-                                                    <button class="lead-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                                      View Lead
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                    </ul>
-                                                </div>
-
+                                              <select class="form-select lead-btn" id="Category">
+                                                    <optgroup label="Select Lead List" class="my-2">
+                                                        <option> View Lead</option>
+                                                        <option>Custom Software Development</option>
+                                                        <option>App Development</option>
+                                                        <option>UI/UX</option>
+                                                    </optgroup>
+                                                    <optgroup  label="Without Lead List" class="my-2">
+                                                        <option>Without Lead </option>
+                                                    </optgroup>
+                                                    <optgroup label="Others" class="my-2">
+                                                        <option>All </option>
+                                                    </optgroup>
+                                                </select>
                                             </di>
 
                                         </div>
@@ -674,24 +687,23 @@
     </div>
     <!-- sent email modal -->
     <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog sent-email-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="s-heading flex-grow-1 text-center" id="exampleModalLabel">Add New Lead</h5>
                     <button type="button" class="btn-transparent" data-bs-dismiss="modal" aria-label="Close">
                         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M23.4667 4.5333C18.2667 -0.666699 9.73333 -0.666699 4.53333 4.5333C-0.666669 9.7333 -0.666669 18.2666 4.53333 23.4666C9.73333 28.6666 18.1333 28.6666 23.3333 23.4666C28.5333 18.2666 28.6667 9.7333 23.4667 4.5333ZM17.7333 19.6L14 15.8666L10.2667 19.6L8.4 17.7333L12.1333 14L8.4 10.2666L10.2667 8.39997L14 12.1333L17.7333 8.39997L19.6 10.2666L15.8667 14L19.6 17.7333L17.7333 19.6Z" fill="#312783"/>
-                            </svg>
-                            
+                        </svg> 
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="mt-4">
+                    <div class="mt-1">
                         <div class="all-sent-email text-end">
                             <div class="dropdown ">
                                 <button class="lead-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    View All Sent Email
-                                            </button>
+                                     View All Sent Email
+                                </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
                                     <li><a class="dropdown-item" href="#">Birthday</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>

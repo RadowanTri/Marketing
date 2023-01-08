@@ -525,27 +525,22 @@
                         <div class="content-body  mb-4">
                             <div class="all-campaigns contact-mail">
                                 <div class="all-campaigns-body shadow">
-
                                     <div class="select-campaign ">
                                         <div class="company-list d-flex">
                                             <h3 class="s-heading mb-3 ">
                                                 Employee List of Person
                                             </h3>
                                             <div class="d-flex  gap-2">
-                                                <select class="form-select lead-btn" id="Category">
-                                                    <optgroup label="Select Lead List" class="my-2">
-                                                        <option> View Lead</option>
-                                                        <option>Custom Software Development</option>
-                                                        <option>App Development</option>
-                                                        <option>UI/UX</option>
-                                                    </optgroup>
-                                                    <optgroup  label="Without Lead List" class="my-2">
-                                                        <option>Without Lead </option>
-                                                    </optgroup>
-                                                    <optgroup label="Others" class="my-2">
-                                                        <option>All </option>
-                                                    </optgroup>
-                                                </select>
+                                                <div class="dropdown">
+                                                    <button class="lead-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                      View Lead
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    </ul>
+                                                </div>
                                                 <div class="dropdown">
                                                     <button class="lead-btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                                                         Action
@@ -563,21 +558,15 @@
                                                                     <a class="dropdown-item" href="#">
                                                                         <!-- Button trigger modal -->
                                                                         <button type="button" class="add-new" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                                            <img src="assets/img/plus.svg" alt="">
-                                                                            Add New
-                                                                           
+                                                                            <img src="assets/img/plus1.svg" alt="">
+                                                                             Add New
                                                                         </button>
-
                                                                         <!-- Modal -->
-
                                                                     </a>
-
                                                                 </li>
                                                                 <li>
                                                                     <a class="dropdown-item" href="#">E-commarce</a>
-
                                                                 </li>
-
                                                                 <li>
                                                                     <a class="dropdown-item" href="#">Custom Software Development</a>
                                                                 </li>
@@ -586,7 +575,6 @@
                                                                 </li>
                                                                 <li>
                                                                     <div class="dropdown-item">
-
                                                                         <button class="action-btn cancel-btn">Cancel</button>
                                                                         <button class="action-btn submit-btn">Submit</button>
                                                                     </div>
@@ -598,7 +586,6 @@
                                                     </ul>
                                                 </div>
                                             </div>
-
                                         </div>
                                         <div class="select-campaign-b conatact-table">
 
@@ -630,10 +617,13 @@
                                                         <th>
                                                             <label>Country</label>
                                                         </th>
-
+                                                        <th><label>Website</label></th>                                                        
+                                                        <th><label>Linkedin</label></th>                                                        
+                                                        <th><label>Company Type</label></th>                                                                                                   
                                                         <th><label>Employee</label> </th>
                                                         <th><label>Revenue</label> </th>
-                                                        <th><label>Action</label> </th>
+                                                        <th><label>Lead Name </label></th>   
+                                                        <th><label>Email Action</label> </th>
                                                     </tr>
 
                                                 </thead>
@@ -656,6 +646,9 @@
                                                         <td> <label>0120110425</label> </td>
                                                         <td> <label>03</label> </td>
                                                         <td> <label> Dhaka</label> </td>
+                                                        <td> <label>Bangladesh</label> </td>
+                                                        <td> <label>Bangladesh</label> </td>
+                                                        <td> <label>Bangladesh</label> </td>
                                                         <td> <label>Bangladesh</label> </td>
 
                                                         <td> <label> 10000</label> </td>
