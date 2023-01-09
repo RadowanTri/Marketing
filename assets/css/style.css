@@ -3083,12 +3083,12 @@ margin: 0 auto;
     display: inline-block;
 }
 
-.s-heading {
+/* .s-heading {
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
     color: #312783;
-}
+} */
 
 .lead-btn {
     font-size: 14px;
@@ -4001,4 +4001,17 @@ margin: 0 auto;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
+.holiday-setup .ee-data .form-select, 
+.holiday-setup .contact-btn{
+    height: 34px;
+}
+.country-holiday{
+    border-top: 1px solid #312783;
+}
+.country-holiday table th {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #312783;
 }

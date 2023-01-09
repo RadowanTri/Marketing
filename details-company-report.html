@@ -67,7 +67,7 @@
             </li>
             <!-- Divider -->
 
-            <li class="nav-item">
+            <li class="nav-item ">
                 <a class="nav-link" href="automation.html">
                     <i class="fa-solid fa-chart-line"></i>
                     <span>Automation</span>
@@ -106,7 +106,7 @@
                 </a>
                 <div id="Contact" class="collapse show">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="contactcompany.html">Company</a>
+                        <a class="collapse-item " href="contactcompany.html">Company</a>
                         <a class="collapse-item active" href="person.html">Person</a>
                     </div>
                 </div>
@@ -264,8 +264,8 @@
                             <div class="breadcrumb-header">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb content_shadow">
-                                        <li class="breadcrumb-item"><a href="person.html">Contact</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Person Profile</li>
+                                        <li class="breadcrumb-item"><a href="contact.html">Contact</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Company Person Profile</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -279,10 +279,10 @@
                                         </h3>
                                         <div class="com-prof-h mb-3">
                                             <div class="com-logo mb-15">
-                                                <img class="rounded-circle" width="75" height="75" src="assets/img/Jack.png" alt="Jack">
+                                                <img src="assets/img/com-logo.png" alt="logo">
                                             </div>
                                             <div class="mb-10">
-                                                <p class="f-14 f-500">Name: Momin</p>
+                                                <p class="f-14 f-500">Company Name: Time Research & Innovation</p>
                                                 <p class="f-14">Category: Software & Research</p>
                                             </div>
                                             <div class="com-info d-flex align-items-center justify-content-center gap-3">
@@ -389,7 +389,7 @@
                                                             <form action="">
                                                                 <div class="row  gap-3">
                                                                     <div class="col-auto">
-                                                                        <label for="inputName" class="col-form-label">Lead Name* <span class="red">*</span></label>
+                                                                        <label for="inputName" class="col-form-label">Lead Name <span class="red">*</span></label>
                                                                     </div>
                                                                     <div class="col">
                                                                         <input type="text" id="inputName" class="form-control" aria-describedby="NameHelpInline">
@@ -439,7 +439,7 @@
                                                     <h6 class="f-500 blue-color">10</h6>
                                                     <p class="f-14 ">Sent Emails</p>
                                                     <button type="button" class="btn-transparent f-14 f-500 blue-color" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                        See Details
+                                                        Sent Emails
                                                     </button>
                                                 </div>
                                             </div>
@@ -448,12 +448,13 @@
                                             <div class="open-time d-flex gap-1">
                                                 <label class="f-14" for="meeting-time">Opened:</label>
 
-                                                <input class="f-14 f-500 blue-color" type="datetime-local " id="meeting-time " name="meeting-time " value="2018-06-12T19:30 " min="2018-06-07T00:00 " max="2018-06-14T00:00 " </div>
+                                                <input class="f-14 f-500 blue-color" type="datetime-local " id="meeting-time " name="meeting-time " value="2018-06-12T19:30 " min="2018-06-07T00:00 " max="2018-06-14T00:00 " >
                                             </div>
                                             <div class="open-time d-flex gap-1">
                                                 <label class="f-14" for="meeting-time">Last Clicked:</label>
+                                                <input type="text">
 
-                                                <input class="f-14 f-500 blue-color" type="datetime-local " id="meeting-time " name="meeting-time " value="2018-06-12T19:30 " min="2018-06-07T00:00 " max="2018-06-14T00:00 " </div>
+                                                <input class="f-14 f-500 blue-color" type="datetime-local " id="meeting-time " name="meeting-time " value="2018-06-12T19:30 " min="2018-06-07T00:00 " max="2018-06-14T00:00 " >
                                             </div>
                                         </div>
                                         <div class="mt-20 text-start grid-2">
@@ -544,12 +545,9 @@
 
                                     </div>
                                     <!-- end card body-->
-
-
-
                                 </div>
                             </div>
-
+ 
                         </div>
 
                     </div>
@@ -561,24 +559,23 @@
     </div>
     <!-- sent email modal -->
     <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="email-modal-dialog modal-dialog">
+        <div class="modal-dialog sent-email-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="s-heading flex-grow-1 text-center" id="exampleModalLabel">Sent Email Details</h5>
+                    <h5 class="s-heading flex-grow-1 text-center" id="exampleModalLabel">Add New Lead</h5>
                     <button type="button" class="btn-transparent" data-bs-dismiss="modal" aria-label="Close">
                         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M23.4667 4.5333C18.2667 -0.666699 9.73333 -0.666699 4.53333 4.5333C-0.666669 9.7333 -0.666669 18.2666 4.53333 23.4666C9.73333 28.6666 18.1333 28.6666 23.3333 23.4666C28.5333 18.2666 28.6667 9.7333 23.4667 4.5333ZM17.7333 19.6L14 15.8666L10.2667 19.6L8.4 17.7333L12.1333 14L8.4 10.2666L10.2667 8.39997L14 12.1333L17.7333 8.39997L19.6 10.2666L15.8667 14L19.6 17.7333L17.7333 19.6Z" fill="#312783"/>
-                            </svg>
-                            
+                        </svg> 
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="pb-2">
-                        <div class="all-sent-email text-end mb-3">
+                    <div class="mt-1">
+                        <div class="all-sent-email text-end">
                             <div class="dropdown ">
                                 <button class="lead-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    View All Sent Email
-                            </button>
+                                     View All Sent Email
+                                </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
                                     <li><a class="dropdown-item" href="#">Birthday</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -627,28 +624,8 @@
                                         </td>
                                         <td data-label="Edit">
                                             <a href="#" class="add-more-btn">
-                                                View Detils
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <!-- table-text End -->
-                                    <tr class="table-row table-text">
-
-                                        <td data-label=" Email">
-                                            <div class="d-flex align-items-center gap-2">
-                                                <img src="assets/img/Birthday7.gif" width="35" height="35" alt="">
-                                                <p>radowan@gmail.com</p>
-                                            </div>
-                                        </td>
-                                        <td data-label="Name">Software</td>
-                                        <td data-label="Date">12.11.2021</td>
-                                        <td data-label="Time">
-                                            9.30 am
-                                        </td>
-                                        <td data-label="Edit">
-                                            <a href="#" class="add-more-btn">
-                                                View Detils
-                                            </a>
+                                                                View Detils
+                                                            </a>
                                         </td>
                                     </tr>
                                     <!-- table-text End -->

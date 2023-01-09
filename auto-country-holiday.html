@@ -267,10 +267,12 @@
                                         <nav aria-label="breadcrumb">
                                             <ol class="breadcrumb mb-0">
                                                 <li class="breadcrumb-item"><a href="automation.html">Automation</a></li>
-                                                <li class="breadcrumb-item active" aria-current="page">Customer Journey </li>
+                                                <li class="breadcrumb-item"><a href="customerjourney.html">Customer Journey </a></li>
+                                                <li class="breadcrumb-item active" aria-current="page">Countrywise Mail</li>
                                             </ol>
                                         </nav>
                                     </div>
+                                  
                           
                                 </div>
                                 <!-- end card body-->
@@ -280,111 +282,84 @@
 
                         <div class="content-body  mb-4">
                             <div class="journey-page-details ">
-                                <div class="card mb-4">
-                                    <div class="card-body  ">
+                                <div class="card holiday-setup mb-4">
+                                    <div class="p-3">
 
                                         <h3 class="s-heading mb-3">
-                                            Date & Time Setup Details
+                                            Countrywise Mail Details
                                         </h3>
-                                        <div class="time-setup">
-                                            <form action="">
-
-                                                <div class="row">
-                                                    <div class="col-md-5 mb-2">
-                                                        <div class="auto-start">
-                                                            <div class="ee-data">
-                                                                <p class="f-14 f-500">When should this automation start?</p>
-                                                                <div class="custom-radio automation-dd">
-                                                                    <input type="radio" id="test1" name="radio-group" checked>
-                                                                    <label class="d-flex align-item-center gap-2"  for="test1">
-                                                                        <input type="text" class="form-control" placeholder="Enter Your Data" name="" id="">
-                                                                        <select class="form-select" name="" id="">
-                                                                            <option value="">Week</option>
-                                                                            <option value="">Monthly</option>
-                                                                            <option value="">Year</option> 
-                                                                        </select>
-                                                                    </label>
-                                                                    <P class="f-14 pl-28 pt-1">Before expected date</P>
-                                                                </div>
-                                                                <div class="custom-radio ">
-                                                                    <input type="radio" id="test2" name="radio-group">
-                                                                    <label class="f-500" for="test2">Expected date</label>
-                                                                </div>
-                                                            </div> 
-                                                            <div class="ee-data mt-3">
-                                                                <p class="f-14 f-500">When should this automation start?</p>
-                                                                <div class="custom-radio ">
-                                                                    <input type="radio" id="Yearly" name="radio-group">
-                                                                    <label class="f-500" for="Yearly">Yearly</label>
-                                                                </div>
-                                                                <div class="custom-radio ">
-                                                                    <input type="radio" id="Yearly1" name="radio-group">
-                                                                    <label class="f-500" for="Yearly1">Don’t Repeat</label>
-                                                                </div>
-                                                            </div> 
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-5 mb-2">
+                                        <form action="">
+                                            <div class="col-md-12">
+                                                <div class="select-campaign-t">
+                                                    <p class="f-14 f-500">Chose Country</p>
+                                                    <div class="contact-button d-flex align-item-center gap-2">
                                                         <div class="ee-data">
-                                                            <p class="f-14 f-500">When should this automation start?</p>
-                                                            <div class="custom-radio automation-dd d-flex align-item-center gap-2">
-                                                               <input type="time" class="form-control w-50" placeholder="Enter Time" name="" id="">
-                                                                <select class="form-select" name="" id="">
-                                                                        <option value="">Recepients Local Time Zone</option>
-                                                                        <option value="">Gmt</option>
-                                                                        <option value="">Year</option> 
-                                                                </select>
+                                    
+                                                            <div class="custom-radio">
+
+                                                                <select class="form-select " name="" id="">
+                                                                    <option value="">Select Country</option>
+                                                                    <option value="">Bangladesh</option>
+                                                                    <option value="">UK</option> 
+                                                               </select>
                                                             </div>
                                                         </div> 
-                                                    </div>
-                                                    <div class="col-md-12 mb-2">
-                                                        <div class="text-start">
-                                                            <button class="action-btn cancel-btn">Cancel</button>
-                                                            <button class="action-btn submit-btn">Submit</button>
+                                                        <div class="custom-radio">
+                                                            <button class="import-btn contact-btn ">Import</button>
+                                                        </div>
+                                                        <div class="dropdown custom-radio">
+                                                            <button class="export-btn contact-btn dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Export
+                                                            </button>
+                                                            <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton3" style="">
+                                                                <li><a class="dropdown-item active" href="#">CSV</a></li>
+                                                                <li><a class="dropdown-item" href="#">PDF</a></li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </form>
-                                            
+                                            </div>
+                                        </form>
+                                       
+                                    </div>
+                                    <div class="country-holiday ">
+                                        <div class="p-3">
+                                            <table class="table table-borderless">
+                                                <thead>
+                                                  <tr>
+                                                    <th scope="col">Serial No</th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Day</th>
+                                                    <th scope="col">Holiday Name</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td>01</td>
+                                                    <td>21.02.2022</td>
+                                                    <td>Monday</td>
+                                                    <td>International Mother Language Day</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>02</td>
+                                                    <td>17.03.2022</td>
+                                                    <td>Thursday</td>
+                                                    <td>Sheikh Mujibur Rahman’s Birthday</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>03</td>
+                                                    <td>17.03.2022</td>
+                                                    <td>Thursday</td>
+                                                    <td>Sheikh Mujibur Rahman’s Birthday</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
                                         </div>
-
                                     </div>
                                     <!-- end card body-->
 
                                 </div>
-                                <div class="automation-map  mb-4">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            
-                                            <div class="row justify-content-center">
-                                                <h3 class="s-heading text-center mb-3">
-                                                    Automation Map
-                                                </h3>
-                                                <div class="col-md-4">
 
-                                                    <div class="single-compaign-wq">
-                                                        <a href="#">
-                                                            <div class="setup-icon">
-                                                                <i class="fa-solid fa-calendar-days"></i>
-                                                            </div>
-                                                            <div class="set-content">
-                                                                <h3 class="s-heading">
-                                                                    Date &amp; Time
-                                                                </h3>
-                                                                <div class="fs-card-title">
-            
-                                                                    <p class="f-14">Select a date based property</p>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                     
-                                        <!-- end card body-->
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
