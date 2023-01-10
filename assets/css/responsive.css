@@ -109,6 +109,23 @@
                     .all-campaigns-body {
                         flex-direction: column;
                     }
+                    .customer-email.span-bar {
+                        width: 45%;
+                    }
+                    .company-list .dropdown-menu .dropdown-submenu {
+                        left: -200px;
+                    }
+                    .s-heading,
+                    .title-2 {
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+                    .single-compaign-wq a {
+                        gap: 10px;
+                        padding: 10px 15px;
+                    }
+                    
+                    
                 }
                 /* small devices (320px)*/
                 
@@ -314,6 +331,10 @@
                     .sidebar .nav-item .collapsing .collapse-inner .collapse-item {
                         padding: 0.5rem .5rem;
                     }
+                   
+                    .s-heading, .title-2{
+                        font-size: 15px;
+                    }
                 }
                 
                 @media (min-width: 576px) and (max-width: 767px) {
@@ -401,6 +422,7 @@
                     .all-campaigns-body .select-campaign .select-campaign-b li.list-group-item {
                         flex-direction: column;
                     }
+                  
                 }
                 
                 @media (min-width: 320px) and (max-width: 480px) {
